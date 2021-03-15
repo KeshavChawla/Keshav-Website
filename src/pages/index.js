@@ -32,7 +32,7 @@ function Landing() {
   }, [animateIn]);
 
   return (
-    <main className={styles.Landing}>
+    <main className={styles.sd}>
       <Head />
       <BackgroundGrid />
     </main>
