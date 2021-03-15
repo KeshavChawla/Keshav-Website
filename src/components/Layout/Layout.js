@@ -12,11 +12,8 @@ function Layout({ children }) {
   return (
     <>
       <Nav />
-
       {children}
-
       <Footer />
-
       <RotateScreen />
     </>
   );
