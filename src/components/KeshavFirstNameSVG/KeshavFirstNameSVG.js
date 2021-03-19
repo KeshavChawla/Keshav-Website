@@ -2,11 +2,11 @@ import React, { memo, forwardRef } from 'react';
 // import classnames from 'classnames';
 import checkProps from '@jam3/react-check-extra-props';
 
-import styles from './KeshavFirstNameSVG.module.scss';
+import styles from './KeshavFirstNameSvg.module.scss';
 
 // import routes from '../../data/routes';
 
-const KeshavFirstNameSVG = forwardRef((props, ref) => {
+const KeshavFirstNameSvg = forwardRef((props, ref) => {
   return (
     <div className={styles.backgroundGrid}>
       <svg ref={ref} width="935px" height="221px" viewBox="0 0 935 221" version="1.1">
@@ -30,8 +30,8 @@ const KeshavFirstNameSVG = forwardRef((props, ref) => {
   );
 });
 
-KeshavFirstNameSVG.propTypes = checkProps({});
+KeshavFirstNameSvg.propTypes = checkProps({});
 
-KeshavFirstNameSVG.defaultProps = {};
+KeshavFirstNameSvg.defaultProps = {};
 
-export default memo(KeshavFirstNameSVG);
+export default memo(KeshavFirstNameSvg);

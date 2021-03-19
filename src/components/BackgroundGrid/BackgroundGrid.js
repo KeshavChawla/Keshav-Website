@@ -4,7 +4,7 @@ import checkProps from '@jam3/react-check-extra-props';
 import { gsap } from 'gsap';
 
 import Vivus from 'vivus';
-import KeshavFirstNameSVG from '../KeshavFirstNameSVG/KeshavFirstNameSVG';
+import KeshavFirstNameSVG from '../KeshavFirstNameSVG/KeshavFirstNameSvg';
 // import KeshavFirstNameSVG from '../../assets/svgs/KeshavName_animated.svg';
 
 import styles from './BackgroundGrid.module.scss';
