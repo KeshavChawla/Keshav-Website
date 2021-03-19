@@ -43,7 +43,6 @@ function BackgroundGrid() {
     //   .to(itemElsHoriz.current, { scaleX: 0, transformOrigin: '100% 0%' }, 0)
     //   .from(itemEls.current, { scaleY: 0, transformOrigin: '0% 0%' }, secondStartTime)
     //   .from(itemElsHoriz.current, { scaleX: 0, transformOrigin: '0% 0%' }, secondStartTime);
-    console.log(firstNameRef.current);
     new Vivus(firstNameRef.current, { duration: 200 }, null);
   }, [itemEls, itemElsHoriz]);
 
