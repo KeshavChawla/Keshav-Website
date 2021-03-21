@@ -45,33 +45,31 @@ function BackgroundGrid() {
 
   const numberOfLines = 40;
   return (
-    <>
-      <div ref={gridRef} className={styles.backgroundGrid}>
-        {/* <KeshavFirstNameSVG ref={firstNameRef} /> */}
-        {/* <div ref={gridLineRef} className={styles.gridLine} /> */}
-        <div className={styles.gridDiv}>
-          <div className={styles.vertDivContainer}>
-            {[...Array(numberOfLines)].map((x, i) => (
-              <div
-                ref={(element) => itemEls.current.push(element)}
-                className={styles.gridLine}
-                key={'verticalLine' + i}
-              />
-            ))}
-          </div>
+    <div ref={gridRef} className={styles.backgroundGrid}>
+      {/* <KeshavFirstNameSVG ref={firstNameRef} /> */}
+      {/* <div ref={gridLineRef} className={styles.gridLine} /> */}
+      <div className={styles.gridDiv}>
+        <div className={styles.vertDivContainer}>
+          {[...Array(numberOfLines)].map((x, i) => (
+            <div
+              ref={(element) => itemEls.current.push(element)}
+              className={styles.gridLine}
+              key={'verticalLine' + i}
+            />
+          ))}
+        </div>
 
-          <div className={styles.horizDivContainer}>
-            {[...Array(numberOfLines)].map((x, i) => (
-              <div
-                ref={(element) => itemElsHoriz.current.push(element)}
-                className={styles.gridLineHoriz}
-                key={'horiztonalLine' + i}
-              />
-            ))}
-          </div>
+        <div className={styles.horizDivContainer}>
+          {[...Array(numberOfLines)].map((x, i) => (
+            <div
+              ref={(element) => itemElsHoriz.current.push(element)}
+              className={styles.gridLineHoriz}
+              key={'horiztonalLine' + i}
+            />
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
