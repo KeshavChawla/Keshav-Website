@@ -4,7 +4,7 @@ import checkProps from '@jam3/react-check-extra-props';
 import Link from 'next/link';
 
 import Vivus from 'vivus';
-import KeshavFirstNameSVG from '../KeshavFirstNameSVG/KeshavFirstNameSvg';
+import KeshavFirstNameSvgLogo from '../KeshavFirstNameSvgLogo/KeshavFirstNameSvgLogo';
 
 import styles from './Footer.module.scss';
 
@@ -27,7 +27,7 @@ function Footer() {
         ))}
       </ul>
       <div className={styles.keshavNameAnimationWrapper}>
-        <KeshavFirstNameSVG className={styles.keshavNameAnimation} ref={firstNameRef} />
+        <KeshavFirstNameSvgLogo className={styles.keshavNameAnimation} ref={firstNameRef} />
       </div>
     </footer>
   );
