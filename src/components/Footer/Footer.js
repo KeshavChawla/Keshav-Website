@@ -16,7 +16,7 @@ function Footer() {
   useEffect(() => {
     new Vivus(firstNameRef.current, { duration: 200 }, null);
   });
-
+  //
   return (
     <footer className={classnames(styles.Footer)}>
       <ul>
