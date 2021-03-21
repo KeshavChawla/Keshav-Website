@@ -42,7 +42,7 @@
       }
     }
   }
-  .gridDiv:after {
+  .gridDiv::after {
     content: '';
     position: absolute;
     top: 0;
