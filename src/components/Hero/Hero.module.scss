@@ -1,0 +1,31 @@
+@import 'shared';
+
+.hero {
+  color: $white;
+  @include breakpoint(desktopSm) {
+    padding-top: $navbar-height-desktop;
+  }
+
+  .gridWrapper {
+    --grid-area: 'media text';
+    display: grid;
+    padding-top: $navbar-height-mobile;
+    grid-template-areas: var(--grid-area);
+
+    .media {
+      grid-area: 'media';
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .textWrapper {
+      @include flex-center;
+
+      .text {
+        grid-area: 'text';
+        max-width: px(1000);
+      }
+    }
+  }
+}

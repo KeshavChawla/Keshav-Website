@@ -6,6 +6,7 @@ import styles from './index.module.scss';
 
 import Head from '../components/Head/Head';
 import BackgroundGrid from '../components/BackgroundGrid/BackgroundGrid';
+import Hero from '../components/Hero/Hero';
 
 import { withRedux } from '../redux/withRedux';
 import { setLandingLoaded } from '../redux/modules/app';
@@ -38,7 +39,10 @@ function Landing() {
     // </main>
     <main className={styles.Landing}>
       <Head />
-      <BackgroundGrid />
+      <div className={styles.backgroundGridWrapper}>
+        <BackgroundGrid />
+      </div>
+      <Hero />
       <section className={styles.hero} ref={containerRef}></section>
     </main>
   );
