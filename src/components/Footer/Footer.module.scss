@@ -5,13 +5,23 @@
   color: $white;
   padding: px(50) 0;
 
-  ul {
-    li {
-      margin-top: px(15);
+  .footerLink {
+    padding-left: (10px);
+    margin-right: (10px);
 
-      &:first-child {
-        margin-top: 0;
-      }
+    &:first-child {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+  .keshavNameAnimationWrapper {
+    @include flex-center;
+    .keshavNameAnimation {
+      margin-top: px(40);
+      height: px(50);
+      margin-bottom: px(40);
+      overflow: visible;
+      width: fit-content;
     }
   }
 }

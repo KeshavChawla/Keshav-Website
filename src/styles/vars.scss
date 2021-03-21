@@ -31,13 +31,15 @@ $black: #000;
 // ====================================================================
 $page-bg-color: $white;
 $element-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.04);
-$generic-fonts: WorkSansMedium, Helvetica, Arial, sans-serif;
+$generic-fonts: Roboto, Helvetica, Arial, sans-serif;
 
 // ====================================================================
 // Nav bar
 // ====================================================================
 $navbar-height-mobile: 6rem;
 $navbar-height-desktop: 8rem;
+// $navbar-height-mobile: 0;
+// $navbar-height-desktop: 0;
 
 // ====================================================================
 // List of z-index element

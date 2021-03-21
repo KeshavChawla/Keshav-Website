@@ -59,3 +59,11 @@ $base-path: '../assets/fonts/' !default;
   font-display: swap;
   src: url('#{$base-path}WorkSans/WorkSans-ExtraBold.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('#{$base-path}Roboto/Roboto-Regular.ttf') format('opentype');
+}
