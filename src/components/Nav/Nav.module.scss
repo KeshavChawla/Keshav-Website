@@ -12,6 +12,11 @@
   @include flex-center-vert;
   height: $navbar-height-mobile;
 
+  &.dark {
+    background-color: $black;
+    color: $white;
+  }
+
   @include breakpoint(desktopSm) {
     height: $navbar-height-desktop;
   }
@@ -29,8 +34,12 @@
       &.routes {
         justify-content: flex-start;
 
-        .threeLogo {
+        .keshavLogo {
           width: px(25);
+          &.dark {
+            background-color: $black;
+            color: $white;
+          }
         }
       }
 
