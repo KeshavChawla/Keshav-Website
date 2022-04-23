@@ -22,7 +22,16 @@ body {
   overflow-x: hidden;
   font-size: px(16);
   word-break: keep-all;
+  background-color: $black;
+  overscroll-behavior-y: none;
+  overflow: visble;
 }
+
+.is-loading {
+  overflow: hidden;
+}
+
+
 
 #root {
   display: flex;

@@ -51,6 +51,7 @@
     "react-redux": "^7.2.1",
     "react-use": "^15.3.3",
     "redux": "^4.0.5",
+    "vanilla-tilt": "^1.7.2",
     "vivus": "^0.4.5",
     "xss": "^1.0.8"
   },

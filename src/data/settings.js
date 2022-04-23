@@ -2,5 +2,5 @@
 export const resizeDebounceTime = 10; // in ms
 
 // head
-export const siteName = 'Jam3 Generator';
-export const siteSlogan = 'The Relentless Pursuit of Better';
+export const siteName = 'Keshav Chawla';
+export const siteSlogan = 'A personal portfolio site for Keshav Chawla';
