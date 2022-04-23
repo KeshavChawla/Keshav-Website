@@ -30,7 +30,7 @@
   grid-template-columns: repeat(2, 1fr);
   // border: 2px solid red;
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
+  grid-gap: 20px;
   height: 100vh;
   grid-row-gap: 0px;
 }
@@ -67,6 +67,4 @@ p.aboutPara {
 .memojiImg {
   max-width: px(200);
   margin-top: 30%;
-  will-change: transform;
-  transform: perspective(500px) rotateX(0deg) rotateY(0deg);
 }
