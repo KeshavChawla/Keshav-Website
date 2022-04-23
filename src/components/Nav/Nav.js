@@ -7,8 +7,8 @@ import PropTypes from 'prop-types';
 
 // import dynamic from 'next/dynamic';
 
-import jam3LogoSrc from '../../assets/images/threeLogo.jpeg';
-import githubLogoSrc from '../../assets/images/github-icon-64b.png';
+// import jam3LogoSrc from '../../assets/images/threeLogo.jpeg';
+// import githubLogoSrc from '../../assets/images/github-icon-64b.png';
 import styles from './Nav.module.scss';
 import routes from '../../data/routes';
 
@@ -23,9 +23,7 @@ export const navThemes = {
   light: 'light'
 };
 
-const LINKS = [
-  { href: 'https://keshavchawla.com', label: 'Jam3', src: KeshavLogoLight }
-].map((link) => ({
+const LINKS = [{ href: 'https://keshavchawla.com', label: 'Jam3', src: KeshavLogoLight }].map((link) => ({
   ...link,
   key: `nav-link-${link.href}-${link.label}`
 }));

@@ -6,6 +6,9 @@ import styles from './Greeting.module.scss';
 
 function Greeting(props) {
   const greetingRef = useRef(null);
+  // const greetingBlurbRef = useRef(null);
+  const blurbEls = useRef([]);
+
   const [memojiImgNum, setMemojiImgNum] = useState(18);
   const memojiImgRef = useRef();
 
@@ -25,20 +28,22 @@ function Greeting(props) {
     VanillaTilt.init(memojiImgRef.current);
   }, []);
 
-  // const allBurbs = props.blurbs.map((text) => {
-  //   <>
-  //     <h3>{text}</h3>
-  //     <br />
-  //   </>;
-  // });
-
-  // console.log(allBurbs);
+  useEffect(() => {
+    gsap
+      .timeline({
+        defaults: { delay: 4 }
+      })
+      .from(greetingRef.current, { autoAlpha: 0, duration: 0.3 }, 0)
+      .from(memojiImgRef.current, { y: -10, duration: 0.6, stagger: 0.1 }, 0)
+      .from(blurbEls.current, { y: -10, duration: 0.6, stagger: 0.1 }, 0)
+      .from(blurbEls.current, { autoAlpha: 0, duration: 1.8, stagger: 0.6 }, 0)
+      .from(memojiImgRef.current, { autoAlpha: 0, duration: 1.8, stagger: 0.6 }, 0);
+  }, [blurbEls, memojiImgRef]);
 
   return (
     <div ref={greetingRef} className={styles.greeting}>
       <div className={styles.gridParent}>
         <div className={styles.memoji}>
-          {/* <img id="site-page-memoji" className="memoji" alt="Keshav Chawla" data-tilt src={require('../../assets/images/memoji-18.png')}></img> */}
           <img
             id="site-page-memoji"
             className={styles.memojiImg}
@@ -55,32 +60,20 @@ function Greeting(props) {
           ></img>
         </div>
         <div className={styles.greetingBlurb}>
-          <h1 className={styles.hello}>
-            Hello{' '}
-            <span role="img" aria-label="Handwave">
-              &#128075;
-            </span>
-          </h1>
-          <h1 className={styles.hello}>
+          <h1 ref={(element) => blurbEls.current.push(element)} className={styles.hello}>
             {props.greeting}
-            <span role="img" aria-label="Handwave">
-              &#128075;
-            </span>
           </h1>
           <br />
-
-          {/* {props.blurbs.map((text) => (
-            <><h3>{text}</h3><br></br></>
-          ))} */}
-
           {props.blurbs.map((blurb) => (
             <>
-              <h3>
+              <h3 ref={(element) => blurbEls.current.push(element)}>
                 {blurb.map((copyBlock) =>
                   copyBlock.type === 'text' ? (
-                    <p className={styles.aboutPara}>{copyBlock.content}</p>
+                    <p classsName={styles.aboutParas} style={{ display: 'inline' }}>
+                      {copyBlock.content}
+                    </p>
                   ) : (
-                    <a target="_blank" rel="noreferrer" href={copyBlock.link}>
+                    <a classsName={styles.aboutParaLinks} target="_blank" rel="noreferrer" href={copyBlock.link}>
                       {copyBlock.content}
                     </a>
                   )
@@ -89,79 +82,6 @@ function Greeting(props) {
               <br></br>
             </>
           ))}
-
-          <h3>
-            I'm <span class="bold"> Keshav</span>, a &#128104;&#8205;&#128187;{' '}
-            <span class="bold">
-              <a target="_blank" rel="noreferrer" href="https://uwaterloo.ca/computing-financial-management/">
-                {' '}
-                Computing and Financial Management
-              </a>
-            </span>{' '}
-            student at the University of Waterloo.
-          </h3>
-          <br />
-          <h3>
-            I previously worked at{' '}
-            <span class="bold">
-              <a target="_blank" rel="noreferrer" href="https://axonify.com/">
-                Axonify
-              </a>
-            </span>{' '}
-            as a &#128187; <span class="bold">JavaScript Developer</span> (Fall 2021 Co-op)
-          </h3>
-          <br />
-          <h3>
-            and{' '}
-            <span class="bold">
-              <a target="_blank" rel="noreferrer" href="https://jam3.com/">
-                Jam3
-              </a>
-            </span>{' '}
-            as a &#128421; <span class="bold">Developer Intern</span> (Winter 2021 Co-op).
-          </h3>
-          <br />
-          <h3>
-            Before all of that, I was an Online Learning Assistant with the{' '}
-            <a target="_blank" rel="noreferrer" href="https://uwaterloo.ca/math/">
-              University of Waterloo Faculty of Mathematics
-            </a>
-            .
-          </h3>
-          <br />
-          <h3>
-            I have also worked with numerous organizations including{' '}
-            <a target="_blank" rel="noreferrer" href="https://deca.ca">
-              DECA Ontario
-            </a>{' '}
-            and{' '}
-            <a target="_blank" rel="noreferrer" href="https://www.project5k.ca/">
-              Project 5K
-            </a>
-            .
-          </h3>
-          <br />
-          <h3>
-            {' '}
-            I'm a previous member of &#128202;{' '}
-            <span class="bold">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://uwaterloo.ca/school-of-accounting-and-finance/student-investment-fund"
-              >
-                The Student Investment Fund{' '}
-              </a>
-            </span>{' '}
-            as a Junior Analyst (Spring 2021) and &#128181;{' '}
-            <span class="bold">
-              <a target="_blank" rel="noreferrer" href="https://uwaterloo.ca/math-endowment-fund/">
-                The Mathematics Endowment Fund
-              </a>
-            </span>{' '}
-            - Funding Council (Fall 2019 & Spring 2020).
-          </h3>
-          <p className={styles.aboutMeBlurb}></p>
         </div>
       </div>
     </div>
