@@ -24,8 +24,7 @@ export const navThemes = {
 };
 
 const LINKS = [
-  { href: 'https://keshavchawla.com', label: 'Jam3', src: jam3LogoSrc },
-  { href: 'https://github.com/jam3', label: 'GitHub', src: githubLogoSrc }
+  { href: 'https://keshavchawla.com', label: 'Jam3', src: KeshavLogoLight }
 ].map((link) => ({
   ...link,
   key: `nav-link-${link.href}-${link.label}`

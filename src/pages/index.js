@@ -9,6 +9,8 @@ import BackgroundGrid from '../components/BackgroundGrid/BackgroundGrid';
 
 import { withRedux } from '../redux/withRedux';
 import { setLandingLoaded } from '../redux/modules/app';
+import Greeting from '../components/Greeting/Greeting';
+import copy from '../data/copy';
 
 function Landing() {
   const containerRef = useRef();
@@ -39,6 +41,7 @@ function Landing() {
     <main className={styles.Landing}>
       <Head />
       <BackgroundGrid />
+      <Greeting {...copy.homePage} />
       <section className={styles.hero} ref={containerRef}></section>
     </main>
   );

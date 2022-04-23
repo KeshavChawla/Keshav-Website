@@ -19,17 +19,24 @@ function BackgroundGrid() {
 
   useEffect(() => {
     // new Vivus(firstNameRef.current, { duration: 200, file: KeshavFirstNameSVG });
-
     // const animationDuration = 5;
     // const staggerAmount = 2;
     // const secondStartTime = 5;
-
-    gsap
-      .timeline({ defaults: { stagger: 0.1, duration: 2, delay: 0 } })
-      .from(gridRef.current, { autoAlpha: 0, duration: 0.3 }, 0)
-      .from(itemEls.current, { scaleY: 0, transformOrigin: '0% 0%', duration: 2, stagger: 0.05 }, 0.3)
-      .from(itemElsHoriz.current, { scaleX: 0, transformOrigin: '0% 0%' }, 0.3)
-      .to([itemEls.current, itemElsHoriz.current], { autoAlpha: 0, duration: 2, stagger: 0 }, 5);
+    // gsap
+    //   .timeline({
+    //     onStart: () => {
+    //       console.log('hi');
+    //       document.body.classList.add('is-loading');
+    //     },
+    //     onComplete: () => {
+    //       document.body.classList.remove('is-loading')
+    //     },
+    //     defaults: { stagger: 0.1, duration: 1, delay: 0 }
+    //   })
+    //   .from(gridRef.current, { autoAlpha: 0, duration: 0.3 }, 0)
+    //   .from(itemEls.current, { scaleY: 0, transformOrigin: '0% 0%', duration: 2, stagger: 0.05 }, 0.3)
+    //   .from(itemElsHoriz.current, { scaleX: 0, transformOrigin: '0% 0%' }, 0.3)
+    //   .to([itemEls.current, itemElsHoriz.current], { autoAlpha: 0, duration: 2, stagger: 0 }, 5);
     // gsap
     //   .timeline({
     //     delay: 2,
