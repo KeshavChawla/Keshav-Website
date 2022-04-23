@@ -2,7 +2,7 @@
 
 .greeting {
   // background-color: #fffbef;
-  background-color: $black;
+  // background-color: $black;
   // border: 2px solid red;
   position: relative;
   display: flex;
@@ -13,20 +13,17 @@
   color: $white;
 }
 
-a {
+.aboutParaLinks {
   box-shadow: inset 0 0 0 0 #54b3d6;
   color: #54b3d6;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-a:hover {
+.aboutParaLinks:hover {
   box-shadow: inset 1000px 0 0 0 #54b3d6;
   color: white;
 }
-
-
-
 
 .gridParent {
   display: grid;
@@ -43,12 +40,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin: px(20);
-  margin-top: 30%;  
+  margin-top: 30%;
   text-align: left;
+  // display: inline;÷
+  // border: 2px solid red;
 }
 
-.aboutPara {
-  display: inline;
+p.aboutPara {
+  display: inline !important;
+  border: 2px solid red;
 }
 
 .aboutMeBlurb {

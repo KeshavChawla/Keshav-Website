@@ -20,7 +20,7 @@ export default {
       [
         {
           type: 'text',
-          content: "I previously worked at "
+          content: 'I previously worked at '
         },
         {
           type: 'link',
@@ -85,7 +85,7 @@ export default {
       [
         {
           type: 'text',
-          content: 'I\'m a previous member of 📊 '
+          content: "I'm a previous member of 📊 "
         },
         {
           type: 'link',
@@ -106,9 +106,6 @@ export default {
           content: ' - Funding Council (Fall 2019 & Spring 2020).'
         }
       ]
-
-       
-
     ]
   }
 };
