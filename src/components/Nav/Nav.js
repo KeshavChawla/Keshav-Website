@@ -34,7 +34,7 @@ function Nav({ theme }) {
   useEffect(() => {
     if (navRef.current !== null)
       gsap.timeline().from(navRef.current, { opacity: 0, scaleY: 0, transformOrigin: 'top top', duration: 1 }, 3);
-  });
+  }, []);
   return (
     <nav ref={navRef} className={classnames(styles.Nav, { [styles.dark]: theme === navThemes.dark })}>
       <div className={styles.wrapper}>

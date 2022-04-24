@@ -7,9 +7,9 @@
   position: relative;
   display: flex;
   margin-top: $navbar-height-desktop;
-  height: 100vh;
+  // minheight: 100vh;
   @include flex-center;
-  width: 100vw;
+  width: 100%;
   color: $white;
 }
 
@@ -31,8 +31,9 @@
   // border: 2px solid red;
   grid-template-rows: 1fr;
   grid-gap: 20px;
-  height: 100vh;
+  height: fit-content;
   grid-row-gap: 0px;
+  top: 0;
 }
 
 .greetingBlurb {
@@ -42,8 +43,6 @@
   margin: px(20);
   margin-top: 30%;
   text-align: left;
-  // display: inline;÷
-  // border: 2px solid red;
 }
 
 p.aboutPara {
@@ -62,9 +61,12 @@ p.aboutPara {
 
 .hello {
   display: inline;
+  font-size: px(70);
 }
 
 .memojiImg {
   max-width: px(200);
   margin-top: 30%;
+  margin-left: 20%;
+  display: grid;
 }

@@ -107,5 +107,94 @@ export default {
         }
       ]
     ]
+  },
+  projects: {
+    projectList: [
+      {
+        image: 'latex_2_mobius.jpg',
+        title: 'LaTeX2Mobius Web Application',
+        techStack: 'PHP, LaTeX, HTML, CSS, Bash',
+        description: [
+          'As classes moved online due to the COVID-19 pandemic, lecture content from various courses had to be transitioned to a virtual/online platform. While working with the University, our team was tasked to create an application to convert LaTeX documents into HTML/MathML syntax (which then can be used to develop content in Möbius). I was primarily tasked with creating the web application, which entailed handling uploading/downloading documents, .zip files, running the conversion script, file deletion, error handling, and the user interface. Read more about the project and the user documentation here:'
+        ],
+        linkCta: 'https://latex2mobius.uwaterloo.ca/includes/L2M_Documentation.pdf'
+      },
+      {
+        image: 'smart_mirror.gif',
+        title: 'A Step by Step Guide to Build your own Smart Mirror',
+        techStack: 'PubNub Functions, Google Assistant SDK (Voice), MagicMirror², Python, and RSS Feeds',
+        description: [
+          'In July of 2017, I stumbled across photos and videos online of people making mirrors that could present a dashboard of widgets ranging from daily weather to any traffic delays.',
+        'I set out to build my own in the process using tutorials online and based on the MagicMirror² platform run on Electron. Everything is powered through a Raspberry Pi 3 and hooked up to a 32 inch TV behind a two-way mirror.',
+        'In the process, I was able to work with PubNub\'s Functions, Integrating Google\'s Assistant Voice in the mirror, MagicMirror²\'s software, and Canadian news RSS feeds.',
+        'I am continuously improving this project and adding/modifying features to my mirror. Just recently, I was able to use the RPiPlay repository to add Airplay functionality to the mirror. In addition to the default view, the mirror is able to mirror my phone screen or "cast" a movie from my phone to watch on the mirror.',
+        'Read more on the project and how to create your own here:'
+        ],
+        linkCta: 'https://medium.com/@keshavchawla/a-step-by-step-guide-to-build-your-own-smart-mirror-543cebbf135f'
+      },
+      {
+        title: 'HackTheFridge - DoTheDew - Hackathon Project Winner',
+        image: 'hack-the-fridge.jpg',
+        techStack: 'Objective-C, XCode, Arduino, PHP, and Indico\'s Image Recognition API',
+        description: [
+          'As part of the HackThe6ix hackathon, I worked with a team to create a marketing tool for Pepsi.',
+          'Inspired by the <a class="project-link" href="https://www.youtube.com/watch?v=CfpatqyujM0"> "I am Canadian" - Molson Canada Fridge Commercial</a>, we converted the concept over for Pepsi/Mountain Dew into an app that gives users a list of tasks (scavenger hunt items) that need to be completed.',
+          'Once the tasks have been completed, a fridge is unlocked to receive free Mountain Dew!'
+        ],
+        linkCta: 'https://devpost.com/software/dothedew-hackthefridge'
+      },
+      {
+        title: 'Straights - C++ Card Game',
+        image: 'cards_background.jpeg',
+        techStack: 'C++',
+        description: [
+          'The Straights game was created as the final project for CS246 Object-Oriented Software Development. The game is made using C++, uses object-oriented programming principles, and made careful considerations of design patterns. The game also employs proper use of memory management and error handling.',
+          'As part of the final project, I also created a UML diagram to describe the relationship between classes, a demo to walk through the different features, and a design document to describe the various design decisions.'
+        ],
+        linkCta: ''
+      }
+      // {
+        //   title: '',
+        //   image: '',
+      //   techStack: '',
+      //   description: [],
+      //   linkCta: ''
+      // },
+      // {
+      //   image: '',
+      //   title: '',
+      //   techStack: '',
+      //   description: [],
+      //   linkCta: ''
+      // },
+      // {
+      //   image: '',
+      //   title: '',
+      //   techStack: '',
+      //   description: [],
+      //   linkCta: ''
+      // },
+      // {
+      //   image: '',
+      //   title: '',
+      //   techStack: '',
+      //   description: [],
+      //   linkCta: ''
+      // },
+      // {
+      //   image: '',
+      //   title: '',
+      //   techStack: '',
+      //   description: [],
+      //   linkCta: ''
+      // },
+      // {
+      //   image: '',
+      //   title: '',
+      //   techStack: '',
+      //   description: [],
+      //   linkCta: ''
+      // }
+    ]
   }
 };
