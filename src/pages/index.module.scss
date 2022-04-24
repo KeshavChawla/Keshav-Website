@@ -1,6 +1,11 @@
 @import 'shared';
 
 .Landing {
+  > .greeting {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+
   > .hero {
     width: 100%;
     color: #333;
@@ -57,6 +62,55 @@
           }
         }
       }
+    }
+  }
+}
+
+.Projects {
+  color: $white;
+  text-align: left;
+  .projectsTitle {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .projectsSection {
+    max-width: 144rem;
+    margin: 0 auto;
+
+    margin-top: $navbar-height-mobile;
+    @include breakpoint(desktopSm) {
+      margin-top: $navbar-height-desktop;
+    }
+  }
+}
+
+.Custom404 {
+  background-color: $white;
+  .custom404Meomji {
+    width: 50vw;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .error404Link {
+    .error404Text {
+      font-family: 'Roboto-Medium', sans-serif;
+      text-transform: uppercase;
+      color: #0a68e6;
+      -webkit-text-fill-color: #fffbef;
+      -webkit-text-stroke-width: 1.5px;
+      -webkit-text-stroke-color: #0a68e6;
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 1.85em;
+      margin-bottom: px(20);
+    }
+
+    .error404Home {
+      -webkit-text-fill-color: #b2d1f9;
+      text-decoration: underline;
     }
   }
 }

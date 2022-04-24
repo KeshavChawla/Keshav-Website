@@ -58,8 +58,8 @@ Head.propTypes = checkProps({
 });
 
 Head.defaultProps = {
-  description: 'Default Description',
-  keywords: ['Jam3', 'Web App', 'React', 'NextJS']
+  description: 'Keshav Chawla\'s Personal Website',
+  keywords: ['Keshav Chawla', 'Web Development', 'Computer Science', 'Finance']
 };
 
 export default memo(Head);

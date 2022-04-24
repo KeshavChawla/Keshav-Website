@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import checkProps from '@jam3/react-check-extra-props';
 // import dynamic from 'next/dynamic';
+import { useRouter } from "next/router";
 
 import Nav, { navThemes } from '../Nav/Nav';
 import Footer from '../Footer/Footer';
@@ -9,11 +10,13 @@ import Footer from '../Footer/Footer';
 // const RotateScreen = dynamic(() => import('../RotateScreen/RotateScreen'), { ssr: false });
 
 function Layout({ children }) {
+  const router = useRouter();
+
   return (
     <>
-      <Nav theme={navThemes.dark} />
+      {router.pathname !== "/404" && <Nav theme={navThemes.dark} />}
       {children}
-      <Footer />
+      {router.pathname !== "/404" && <Footer />}
       {/* <RotateScreen /> */}
     </>
   );

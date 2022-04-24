@@ -34,14 +34,12 @@ function Landing() {
   }, [animateIn]);
 
   return (
-    // <main className={styles.Landing}>
-    //   <Head />
-    //   {/* <BackgroundGrid /> */}
-    // </main>
     <main className={styles.Landing}>
       <Head />
       <BackgroundGrid />
-      <Greeting {...copy.homePage} />
+      <section className={styles.greeting}>
+        <Greeting {...copy.homePage} />
+      </section>
       <section className={styles.hero} ref={containerRef}></section>
     </main>
   );

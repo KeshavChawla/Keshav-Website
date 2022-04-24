@@ -25,7 +25,6 @@ function BackgroundGrid() {
     gsap
       .timeline({
         onStart: () => {
-          console.log('hi');
           document.body.classList.add('is-loading');
         },
         onComplete: () => {

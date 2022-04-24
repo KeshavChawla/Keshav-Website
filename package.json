@@ -37,6 +37,7 @@
   "dependencies": {
     "@jam3/detect": "1.0.2",
     "@jam3/react-hooks": "1.0.0",
+    "aos": "^2.3.4",
     "classnames": "2.2.6",
     "default-passive-events": "2.0.0",
     "focus-visible": "^5.1.0",
