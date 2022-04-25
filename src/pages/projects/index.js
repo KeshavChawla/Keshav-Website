@@ -40,16 +40,6 @@ function Projects() {
         {copy.projects.projectList.map((project) => (
           <ProjectCard {...project} />
         ))}
-
-        {/* copy.projects.map */}
-        {/* <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} />
-        <ProjectCard {...copy.projects} /> */}
       </section>
     </main>
   );
