@@ -125,17 +125,17 @@ export default {
         techStack: 'PubNub Functions, Google Assistant SDK (Voice), MagicMirror², Python, and RSS Feeds',
         description: [
           'In July of 2017, I stumbled across photos and videos online of people making mirrors that could present a dashboard of widgets ranging from daily weather to any traffic delays.',
-        'I set out to build my own in the process using tutorials online and based on the MagicMirror² platform run on Electron. Everything is powered through a Raspberry Pi 3 and hooked up to a 32 inch TV behind a two-way mirror.',
-        'In the process, I was able to work with PubNub\'s Functions, Integrating Google\'s Assistant Voice in the mirror, MagicMirror²\'s software, and Canadian news RSS feeds.',
-        'I am continuously improving this project and adding/modifying features to my mirror. Just recently, I was able to use the RPiPlay repository to add Airplay functionality to the mirror. In addition to the default view, the mirror is able to mirror my phone screen or "cast" a movie from my phone to watch on the mirror.',
-        'Read more on the project and how to create your own here:'
+          'I set out to build my own in the process using tutorials online and based on the MagicMirror² platform run on Electron. Everything is powered through a Raspberry Pi 3 and hooked up to a 32 inch TV behind a two-way mirror.',
+          "In the process, I was able to work with PubNub's Functions, Integrating Google's Assistant Voice in the mirror, MagicMirror²'s software, and Canadian news RSS feeds.",
+          'I am continuously improving this project and adding/modifying features to my mirror. Just recently, I was able to use the RPiPlay repository to add Airplay functionality to the mirror. In addition to the default view, the mirror is able to mirror my phone screen or "cast" a movie from my phone to watch on the mirror.',
+          'Read more on the project and how to create your own here:'
         ],
         linkCta: 'https://medium.com/@keshavchawla/a-step-by-step-guide-to-build-your-own-smart-mirror-543cebbf135f'
       },
       {
         title: 'HackTheFridge - DoTheDew - Hackathon Project Winner',
         image: 'hack-the-fridge.jpg',
-        techStack: 'Objective-C, XCode, Arduino, PHP, and Indico\'s Image Recognition API',
+        techStack: "Objective-C, XCode, Arduino, PHP, and Indico's Image Recognition API",
         description: [
           'As part of the HackThe6ix hackathon, I worked with a team to create a marketing tool for Pepsi.',
           'Inspired by the <a class="project-link" href="https://www.youtube.com/watch?v=CfpatqyujM0"> "I am Canadian" - Molson Canada Fridge Commercial</a>, we converted the concept over for Pepsi/Mountain Dew into an app that gives users a list of tasks (scavenger hunt items) that need to be completed.',
@@ -152,49 +152,54 @@ export default {
           'As part of the final project, I also created a UML diagram to describe the relationship between classes, a demo to walk through the different features, and a design document to describe the various design decisions.'
         ],
         linkCta: ''
+      },
+      {
+        title: 'DECA Ontario Website',
+        image: 'deca.jpg',
+        techStack: 'WordPress, HTML, CSS, JavaScript, Web Hosting, Sketch, Adobe Illustrator, and PHP',
+        description: [
+          "As part of DECA Ontario's Provincial Officer team, I completely overhauled the deca.ca website. The process involved creating a system that would allow the website to showcase the strength of the organization while also making it easy to maintain and edit the long term.",
+          'I experimented with numerous content management systems and design mockups before considering a medium that would scale. Through the process, I worked through the design process, managing web hosting, ensuring security, search engine optimization, spam management, testing, rapid deployment, bug patching, and technical support.',
+          'Note that the current version of the site is a newer version and does not reflect my work/development. The year which I primarly worked on the site was 2018.'
+        ],
+        linkCta: 'http://deca.ca/'
+      },
+      {
+        title: 'InsureMotion Hackathon Project',
+        image: 'InsureMotion.jpg',
+        techStack: 'Microsoft Azure Face Emotion Recognition API, Expo, React Native, and Sketch',
+        description: [
+          'InsureMotion is a mobile app that tracks your driving to determine whether or not you have a road rage problem. Stay calm and collected while driving? The app will help you reduce your insurance premiums. The app will film you while driving and look for facial expressions to detect emotion. The emotion data is used to see how calm and collected you can stay while on the road.',
+          'During the project, I had the opportunity to work with Microsoft Azure Face Emotion Recognition API and Expo for making an iOS app. While other team members worked on creating a Python Flask REST API, which would communicate with the Expo add to calculate insurance premiums.'
+        ],
+        linkCta: 'https://devpost.com/software/insuremotion'
       }
-      // {
-        //   title: '',
-        //   image: '',
-      //   techStack: '',
-      //   description: [],
-      //   linkCta: ''
-      // },
-      // {
-      //   image: '',
-      //   title: '',
-      //   techStack: '',
-      //   description: [],
-      //   linkCta: ''
-      // },
-      // {
-      //   image: '',
-      //   title: '',
-      //   techStack: '',
-      //   description: [],
-      //   linkCta: ''
-      // },
-      // {
-      //   image: '',
-      //   title: '',
-      //   techStack: '',
-      //   description: [],
-      //   linkCta: ''
-      // },
-      // {
-      //   image: '',
-      //   title: '',
-      //   techStack: '',
-      //   description: [],
-      //   linkCta: ''
-      // },
-      // {
-      //   image: '',
-      //   title: '',
-      //   techStack: '',
-      //   description: [],
-      //   linkCta: ''
-      // }
     ]
+  },
+  contacts: {
+    email: 'hello@keshavchawla.com',
+    links: [
+      {
+        platform: 'Instagram',
+        link: 'https://instagram.com/keshav.chawla_/'
+      },
+      {
+        platform: 'Github',
+        link: 'https://github.com/KeshavChawla'
+      },
+      {
+        platform: 'Twitter',
+        link: 'https://twitter.com/KeshavChawla_'
+      },
+      {
+        platform: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/keshav-chawla/'
+      },
+      {
+        platform: 'Dribbble',
+        link: 'https://dribbble.com/keshavc'
+      }
+    ],
+    sendOff: 'Made with love in ❤️ in 🇨🇦'
   }
 };

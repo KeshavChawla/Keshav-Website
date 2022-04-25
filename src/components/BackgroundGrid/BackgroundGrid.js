@@ -47,9 +47,9 @@ function BackgroundGrid() {
     //   .from(itemEls.current, { scaleY: 0, transformOrigin: '0% 0%' }, secondStartTime)
     //   .from(itemElsHoriz.current, { scaleX: 0, transformOrigin: '0% 0%' }, secondStartTime);
     // new Vivus(firstNameRef.current, { duration: 200 }, null);
-  }, [itemEls, itemElsHoriz]);
+  }, []);
 
-  const numberOfLines = 40;
+  const numberOfLines = 45;
   return (
     <div ref={gridRef} className={styles.backgroundGrid}>
       {/* <KeshavFirstNameSVG ref={firstNameRef} /> */}
