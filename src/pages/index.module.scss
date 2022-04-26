@@ -157,10 +157,7 @@
   }
 
   .memojiImgContact {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: px(20);
-    margin-bottom: px(20);
+    margin: px(20) auto;
     width: 40%;
     display: flex;
 
@@ -191,12 +188,9 @@
   .contactEmail {
     display: flex;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     font-size: large;
-    margin-top: px(50);
-    margin-bottom: px(50);
+    margin: px(50) auto;
   }
 
   .socialLinks {

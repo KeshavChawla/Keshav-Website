@@ -3,18 +3,13 @@
 .projectCard {
   width: 100%;
   display: grid;
-
-  // grid-template-rows: min-content 1fr;
   position: relative;
   border: 1px solid #3b85ec;
   border-radius: 25px;
-  margin-left: auto;
-  margin-right: auto;
   column-gap: px(20);
   overflow: hidden;
-  margin-top: px(40);
   justify-content: start;
-  margin-bottom: px(40);
+  margin: px(40) auto;
 
   @include breakpoint(desktopSm) {
     grid-auto-flow: column;
@@ -42,7 +37,6 @@
 }
 
 .projectBlurb {
-  // flex: 1;
   margin-top: px(20);
   color: white;
   height: 100%;
