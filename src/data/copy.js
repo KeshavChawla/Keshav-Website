@@ -112,6 +112,7 @@ export default {
     projectList: [
       {
         image: 'latex_2_mobius.jpg',
+        imageAlt: 'Screenshot of the LaTeX2Mobius Web Application',
         title: 'LaTeX2Mobius Web Application',
         techStack: 'PHP, LaTeX, HTML, CSS, Bash',
         description: [
@@ -121,6 +122,7 @@ export default {
       },
       {
         image: 'smart_mirror.gif',
+        imageAlt: 'A short animation showing the loading of the Magic Mirror I created',
         title: 'A Step by Step Guide to Build your own Smart Mirror',
         techStack: 'PubNub Functions, Google Assistant SDK (Voice), MagicMirror², Python, and RSS Feeds',
         description: [
@@ -135,6 +137,8 @@ export default {
       {
         title: 'HackTheFridge - DoTheDew - Hackathon Project Winner',
         image: 'hack-the-fridge.jpg',
+        imageAlt:
+          'A photo of the HackTheFridge iOS App in front of the makeshift Arduino fridge created for the hackathon',
         techStack: "Objective-C, XCode, Arduino, PHP, and Indico's Image Recognition API",
         description: [
           'As part of the HackThe6ix hackathon, I worked with a team to create a marketing tool for Pepsi.',
@@ -145,6 +149,7 @@ export default {
       },
       {
         title: 'Straights - C++ Card Game',
+        imageAlt: 'A stock photo of scrambled cards all face up with the Jack of Spades front and center',
         image: 'cards_background.jpeg',
         techStack: 'C++',
         description: [
@@ -155,6 +160,7 @@ export default {
       },
       {
         title: 'DECA Ontario Website',
+        imageAlt: "A screenshot of the DECA Ontario Website Provincial Executive Officer's page",
         image: 'deca.jpg',
         techStack: 'WordPress, HTML, CSS, JavaScript, Web Hosting, Sketch, Adobe Illustrator, and PHP',
         description: [
@@ -167,6 +173,7 @@ export default {
       {
         title: 'InsureMotion Hackathon Project',
         image: 'InsureMotion.jpg',
+        imageAlt: 'A screenshot of the iOS app for the InsureMotion Hackathon Project',
         techStack: 'Microsoft Azure Face Emotion Recognition API, Expo, React Native, and Sketch',
         description: [
           'InsureMotion is a mobile app that tracks your driving to determine whether or not you have a road rage problem. Stay calm and collected while driving? The app will help you reduce your insurance premiums. The app will film you while driving and look for facial expressions to detect emotion. The emotion data is used to see how calm and collected you can stay while on the road.',

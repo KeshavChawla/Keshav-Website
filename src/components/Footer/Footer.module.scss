@@ -3,8 +3,9 @@
 .Footer {
   background-color: $black;
   color: $white;
-  padding: px(50) 0;
-
+  @include breakpoint(tablet) {
+    padding: px(50) 0;
+  }
   .footerLink {
     margin-left: (10px);
     margin-right: (10px);

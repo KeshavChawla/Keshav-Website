@@ -58,6 +58,9 @@ function Nav({ theme }) {
     <nav ref={navRef} className={classnames(styles.Nav, { [styles.dark]: theme === navThemes.dark })}>
       <div className={styles.wrapper}>
         <ul className={styles.routes}>
+          <a tabIndex={0} aria-label="Skip to content" className={styles.skipToContent} href="#start-of-content">
+            Skip to content
+          </a>
           {Object.values(routes).map(({ path, title }) => (
             <li key={path}>
               <Link href={path}>
@@ -65,7 +68,6 @@ function Nav({ theme }) {
                   {(path === '/') & (title !== 'About') ? (
                     <img
                       className={styles.keshavLogo}
-                      // src={theme === navThemes.dark ? memojiImgNum : memojiImgNum}
                       src={require(`../../assets/images/memojis/memoji-${memojiImgNum}.png`)}
                       alt="Keshav Chawla Home"
                     />
@@ -79,8 +81,8 @@ function Nav({ theme }) {
         </ul>
 
         <ul className={styles.links}>
-          {LINKS.map(({ key, href, label, src }) => (
-            <li key={key}>
+          {LINKS.map(({ key, href, label, src, index }) => (
+            <li key={key + index}>
               <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
                 <img src={src} alt={label} />
               </a>
@@ -88,6 +90,7 @@ function Nav({ theme }) {
           ))}
         </ul>
       </div>
+      <section aria-hidden="true" id="start-of-content"></section>
     </nav>
   );
 }

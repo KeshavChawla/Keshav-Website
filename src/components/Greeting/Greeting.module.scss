@@ -13,27 +13,18 @@
   color: $white;
 }
 
-.aboutParaLinks {
-  box-shadow: inset 0 0 0 0 #54b3d6;
-  color: #54b3d6;
-  margin: 0 -0.25rem;
-  padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.aboutParaLinks:hover {
-  box-shadow: inset 1000px 0 0 0 #54b3d6;
-  color: white;
-}
-
 .gridParent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  // border: 2px solid red;
+  grid-template-rows: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 20px;
   height: fit-content;
   grid-row-gap: 0px;
   top: 0;
+
+  @include breakpoint(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .greetingBlurb {
@@ -41,13 +32,29 @@
   display: flex;
   flex-direction: column;
   margin: px(20);
-  margin-top: 30%;
+  margin-top: px(30);
   text-align: left;
+
+  @include breakpoint(tablet) {
+    margin-top: 30%;
+  }
+
+  .aboutPara {
+    display: inline !important;
+  }
+
+  a {
+    @include link-styles;
+  }
+
+  a:hover {
+    @include link-styles-hover;
+  }
 }
+// border: 2px solid red;
 
 p.aboutPara {
   display: inline !important;
-  border: 2px solid red;
 }
 
 .aboutMeBlurb {
@@ -66,7 +73,12 @@ p.aboutPara {
 
 .memojiImg {
   max-width: px(200);
-  margin-top: 30%;
-  margin-left: 20%;
   display: grid;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint(tablet) {
+    margin-left: 20%;
+    margin-top: 30%;
+  }
 }

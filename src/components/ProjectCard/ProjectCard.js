@@ -1,18 +1,13 @@
-import React, { memo, useEffect, useRef, useState } from 'react';
+import React, { memo, useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import checkProps from '@jam3/react-check-extra-props';
-import { gsap } from 'gsap';
+// import { gsap } from 'gsap';
 import styles from './ProjectCard.module.scss';
 
 function ProjectCard(props) {
-  const projectCardRef = useRef();
   const projectImageRef = useRef();
-  useEffect(() => {
-    gsap.timeline({
-      defaults: { delay: 4 }
-    });
-  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -37,12 +32,12 @@ function ProjectCard(props) {
   }, []);
 
   return (
-    <div data-aos="zoom-in" ref={projectCardRef} className={styles.projectCard}>
+    <div data-aos="zoom-in" className={styles.projectCard}>
       <div className={styles.projectShowcase}>
         <img
           className={styles.projectImage}
           ref={projectImageRef}
-          // alt="Keshav Chawla"
+          alt={props.imageAlt}
           src={require(`../../assets/images/projects/${props.image}`)}
         ></img>
       </div>
@@ -57,7 +52,7 @@ function ProjectCard(props) {
           <p className={styles.projectDescription}>{descriptionPoint}</p>
         ))}
         <h5>
-          <a classsName={styles.projectCTA} target="_blank" rel="noreferrer" href={props.linkCta}>
+          <a target="_blank" rel="noreferrer" href={props.linkCta}>
             {props.linkCta}
           </a>
         </h5>
@@ -65,7 +60,14 @@ function ProjectCard(props) {
     </div>
   );
 }
-ProjectCard.propTypes = checkProps({});
+ProjectCard.propTypes = checkProps({
+  title: PropTypes.string,
+  imageAlt: PropTypes.string,
+  image: PropTypes.string,
+  techStack: PropTypes.string,
+  description: PropTypes.arrayOf(PropTypes.string),
+  linkCta: PropTypes.string
+});
 
 ProjectCard.defaultProps = {};
 

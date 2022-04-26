@@ -1,13 +1,12 @@
 @import 'shared';
 
 .projectCard {
-  max-height: px(450);
   width: 100%;
   display: grid;
-  grid-auto-flow: column;
+
   // grid-template-rows: min-content 1fr;
-  // grid-template-areas: "projectShowcase projectBlurb";
-  border: 1px solid #3B85EC;
+  position: relative;
+  border: 1px solid #3b85ec;
   border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -16,14 +15,24 @@
   margin-top: px(40);
   justify-content: start;
   margin-bottom: px(40);
+
+  @include breakpoint(desktopSm) {
+    grid-auto-flow: column;
+    max-height: px(450);
+  }
 }
 
 .projectShowcase {
   display: inline-grid;
-  width: px(500);
   max-height: px(450);
   min-height: px(300);
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
 
+  @include breakpoint(desktopSm) {
+    width: px(500);
+  }
 
   .projectImage {
     width: 100%;
@@ -33,25 +42,46 @@
 }
 
 .projectBlurb {
-  flex: 1;
+  // flex: 1;
   margin-top: px(20);
   color: white;
-  width: 100%;
   height: 100%;
-  text-align: left;
+  margin-bottom: px(20);
+  margin-left: px(10);
+  width: 95%;
+  @include word-wrap;
 
   .projectTitle {
     font-size: px(30);
+    width: 100%;
     margin-bottom: px(5);
   }
 
   .projectByline {
     font-size: px(15);
     margin-bottom: px(10);
+    width: 100%;
   }
 
   .projectDescription {
+    width: 100%;
     margin-bottom: px(10);
   }
 
+  a {
+    @include link-styles;
+  }
+
+  a:hover {
+    @include link-styles-hover;
+  }
+
+  @include breakpoint(tablet) {
+    width: calc(100% - 20px);
+  }
+
+  @include breakpoint(desktopSm) {
+    margin-left: 0;
+    width: 100%;
+  }
 }
