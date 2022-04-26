@@ -11,18 +11,10 @@ export default {
     path: '/blog/',
     title: 'Blog'
   },
-  // CV: {
-  //   path: '/CV/',
-  //   title: 'CV'
-  // },
   Projects: {
     path: '/projects/',
     title: 'Projects'
   },
-  // Portfolio: {
-  //   path: '/portfolio/',
-  //   title: 'Portfolio'
-  // },
   Contact: {
     path: '/contact/',
     title: 'Contact'

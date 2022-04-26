@@ -13,6 +13,7 @@ import copy from '../../data/copy';
 
 function Projects() {
   const containerRef = useRef();
+  const titleRef = useRef();
   const dispatch = useDispatch();
 
   const animateInInit = useCallback(() => {
@@ -32,11 +33,20 @@ function Projects() {
     animateIn();
   }, [animateIn]);
 
+  useEffect(() => {
+    gsap.from(titleRef.current, { autoAlpha: 0, y: 10, stagger: 0.2, duration: 0.5 });
+  }, [titleRef]);
+
   return (
     <main className={styles.Projects}>
       <Head title="Projects" />
       <section className={styles.projectsSection}>
-        <h1 className={styles.projectsTitle}>Projects 📋</h1>
+        <h1 ref={titleRef} className={styles.projectsTitle}>
+          Projects{' '}
+          <span role="img" aria-label="Clipboard">
+            📋
+          </span>
+        </h1>
         {copy.projects.projectList.map((project) => (
           <ProjectCard {...project} />
         ))}

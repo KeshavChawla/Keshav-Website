@@ -69,29 +69,43 @@
 .Projects {
   color: $white;
   text-align: left;
-  .projectsTitle {
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-  .projectsSection {
-    max-width: 144rem;
-    margin: 0 auto;
 
+  .projectsSection {
+    width: calc(100% - 4rem);
+    margin: 0 auto;
     margin-top: $navbar-height-mobile;
+
     @include breakpoint(desktopSm) {
       margin-top: $navbar-height-desktop;
+    }
+
+    @include breakpoint(desktopMd) {
+      max-width: 144rem;
+      width: 100%;
     }
   }
 }
 
 .Custom404 {
   background-color: $white;
+  align-items: center;
+  display: flex;
+
+  @include breakpoint(desktopSm) {
+    align-items: baseline;
+    display: block;
+  }
+
   .custom404Meomji {
-    width: 50vw;
+    width: 90vw;
     object-fit: contain;
     transform: translate(-50%, -50%);
     margin-top: 5%;
     margin-bottom: 5%;
+
+    @include breakpoint(desktopSm) {
+      width: 50vw;
+    }
   }
 
   .error404Link {
@@ -106,6 +120,13 @@
       letter-spacing: 2px;
       font-size: 1.85em;
       margin-bottom: px(20);
+      margin-left: px(20);
+      margin-right: px(20);
+
+      @include breakpoint(desktopSm) {
+        margin-left: 0;
+        margin-right: 0;
+      }
     }
 
     .error404Home {
@@ -118,50 +139,52 @@
 .Contact {
   color: $white;
   text-align: left;
-  // background-color: $white;
-  .contactTitle {
-    margin-top: 10%;
-    // margin-bottom: 10%;
-  }
-  
+
   .contactSection {
-    max-width: 144rem;
+    width: calc(100% - 4rem);
+    overflow: hidden;
     margin: 0 auto;
     margin-top: $navbar-height-mobile;
-    
+
     @include breakpoint(desktopSm) {
       margin-top: $navbar-height-desktop;
     }
-  }
 
-  .faIcon {
-    color: white;
-    background-color: white;
+    @include breakpoint(desktopMd) {
+      max-width: 144rem;
+      width: 100%;
+    }
   }
 
   .memojiImgContact {
     margin-left: auto;
     margin-right: auto;
-    // position: absolute;
-    width: 10%;
+    margin-top: px(20);
+    margin-bottom: px(20);
+    width: 40%;
     display: flex;
-    // top: 0; left: 0; bottom: 0; right: 0;  
+
+    @include breakpoint(tablet) {
+      width: 10%;
+    }
   }
 
   .contactLink {
-    margin: 0 px(10);
-    box-shadow: inset 0 0 0 0 #0a68e6;
+    box-shadow: inset 0 0 0 0 $keshav-primary-colour;
     color: $white;
     border-radius: 10px;
-    // margin: 0 -.25rem;
-    padding: 0.2rem .85rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  
-    
+    padding: 0.2rem 0.85rem;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(tablet) {
+      margin: 0 px(10);
+    }
   }
 
   .contactLink:hover {
-    box-shadow: inset 100px 0 0 0 #0a68e6;
+    box-shadow: inset 100px 0 0 0 $keshav-primary-colour;
     color: $white;
   }
 
@@ -179,6 +202,13 @@
   .socialLinks {
     display: flex;
     justify-content: center;
-  }
+    flex-direction: column;
+    row-gap: px(20);
 
+    @include breakpoint(tablet) {
+      flex-direction: row;
+      row-gap: 0;
+      margin-bottom: px(5);
+    }
+  }
 }

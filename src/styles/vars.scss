@@ -22,6 +22,7 @@ $layout-desktopLg: map-get($layout, desktopLg) + px;
 // ====================================================================
 $white: #fff;
 $black: #000;
+$keshav-primary-colour: #0a68e6;
 
 // ====================================================================
 // General
@@ -36,8 +37,8 @@ $generic-fonts: Roboto, Helvetica, Arial, sans-serif;
 // ====================================================================
 // Nav bar
 // ====================================================================
-$navbar-height-mobile: 6rem;
-$navbar-height-desktop: 8rem;
+$navbar-height-mobile: 8rem;
+$navbar-height-desktop: 10rem;
 // $navbar-height-mobile: 0;
 // $navbar-height-desktop: 0;
 

@@ -227,3 +227,22 @@
   -moz-appearance: none;
   color: currentColor;
 }
+
+// From https://stackoverflow.com/questions/5241369/word-wrap-a-link-so-it-doesnt-overflow-its-parent-div-width
+// Answered by: laffuste (Sep 24, 2015 at 5:34)
+// Editied by: TylerH (Sep 3, 2019 at 16:16)
+@mixin word-wrap() {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+@mixin link-styles() {
+  text-decoration: underline;
+}
+
+@mixin link-styles-hover() {
+  color: $keshav-primary-colour;
+  text-decoration: underline;
+}
