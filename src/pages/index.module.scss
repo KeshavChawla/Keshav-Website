@@ -1,6 +1,8 @@
 @import 'shared';
 
 .Landing {
+  opacity: 0;
+
   > .greeting {
     max-width: 144rem;
     margin: 0 auto;

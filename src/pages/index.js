@@ -14,6 +14,7 @@ import copy from '../data/copy';
 
 function Landing() {
   const containerRef = useRef();
+  const mainRef = useRef();
   const dispatch = useDispatch();
 
   const animateInInit = useCallback(() => {
@@ -21,7 +22,13 @@ function Landing() {
   }, []);
 
   const animateIn = useCallback(async () => {
-    await gsap.to(containerRef.current, { duration: 0.5, autoAlpha: 1, delay: 0.3 });
+    await gsap.to([containerRef.current, mainRef.current], {
+      duration: 0.5,
+      autoAlpha: 1,
+      opacity: 1,
+      stagger: 0,
+      delay: 0.3
+    });
     dispatch(setLandingLoaded(true));
   }, [dispatch]);
 
@@ -34,7 +41,7 @@ function Landing() {
   }, [animateIn]);
 
   return (
-    <main className={styles.Landing}>
+    <main ref={mainRef} className={styles.Landing}>
       <Head />
       <BackgroundGrid />
       <section className={styles.greeting}>
