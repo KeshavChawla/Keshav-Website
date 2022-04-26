@@ -46,6 +46,7 @@
     "next": "^10.2.3",
     "no-op": "1.0.3",
     "normalize.css": "^8.0.1",
+    "postcss": "^8.4.12",
     "react": "16.13.1",
     "react-dev-utils": "^11.0.4",
     "react-dom": "16.13.1",
