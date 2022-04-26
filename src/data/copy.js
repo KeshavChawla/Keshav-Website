@@ -46,7 +46,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' as a 💻 JavaScript Developer (Fall 2021 Co-op) and'
+          content: ' as a 💻 JavaScript Developer (Fall 2021 Co-op) and '
         },
         {
           type: 'link',
