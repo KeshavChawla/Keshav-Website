@@ -1,13 +1,9 @@
 @import 'shared';
 
 .greeting {
-  // background-color: #fffbef;
-  // background-color: $black;
-  // border: 2px solid red;
   position: relative;
   display: flex;
   margin-top: $navbar-height-desktop;
-  // minheight: 100vh;
   @include flex-center;
   width: 100%;
   color: $white;
@@ -19,7 +15,7 @@
   grid-template-rows: 1fr;
   grid-gap: 20px;
   height: fit-content;
-  grid-row-gap: 0px;
+  grid-row-gap: 0;
   top: 0;
 
   @include breakpoint(tablet) {
@@ -51,7 +47,6 @@
     @include link-styles-hover;
   }
 }
-// border: 2px solid red;
 
 p.aboutPara {
   display: inline !important;
