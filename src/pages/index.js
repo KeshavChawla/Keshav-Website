@@ -22,7 +22,7 @@ function Landing() {
   }, []);
 
   const animateIn = useCallback(async () => {
-    await gsap.to([containerRef.current, mainRef.current], {
+    await gsap.to([containerRef.current], {
       duration: 0.5,
       autoAlpha: 1,
       opacity: 1,
