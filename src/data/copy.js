@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default {
   homePage: {
     greeting: 'Hello 👋',
@@ -20,6 +22,21 @@ export default {
       [
         {
           type: 'text',
+          content: 'I am working at '
+        },
+        {
+          type: 'link',
+          content: 'Wattpad',
+          link: 'https://www.wattpad.com/'
+        },
+        {
+          type: 'text',
+          content: ' for the spring 2022 term! '
+        }
+      ],
+      [
+        {
+          type: 'text',
           content: 'I previously worked at '
         },
         {
@@ -29,10 +46,8 @@ export default {
         },
         {
           type: 'text',
-          content: ' as a 💻 JavaScript Developer (Fall 2021 Co-op)'
-        }
-      ],
-      [
+          content: ' as a 💻 JavaScript Developer (Fall 2021 Co-op) and'
+        },
         {
           type: 'link',
           content: 'Jam3',
@@ -142,7 +157,12 @@ export default {
         techStack: "Objective-C, XCode, Arduino, PHP, and Indico's Image Recognition API",
         description: [
           'As part of the HackThe6ix hackathon, I worked with a team to create a marketing tool for Pepsi.',
-          'Inspired by the <a class="project-link" href="https://www.youtube.com/watch?v=CfpatqyujM0"> "I am Canadian" - Molson Canada Fridge Commercial</a>, we converted the concept over for Pepsi/Mountain Dew into an app that gives users a list of tasks (scavenger hunt items) that need to be completed.',
+          'Inspired by:',
+          <a class="project-link" href="https://www.youtube.com/watch?v=CfpatqyujM0">
+            {' '}
+            "I am Canadian" - Molson Canada Fridge Commercial
+          </a>,
+          ' we converted the concept over for Pepsi/Mountain Dew into an app that gives users a list of tasks (scavenger hunt items) that need to be completed.',
           'Once the tasks have been completed, a fridge is unlocked to receive free Mountain Dew!'
         ],
         linkCta: 'https://devpost.com/software/dothedew-hackthefridge'
