@@ -39,7 +39,7 @@ function Head({ title, description, keywords }) {
       <meta property="og:site_name" content={siteName} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image" content="/_next/static/images/social-image.jpg" />
+      <meta property="og:image" content="/assets/images/social-image.jpg" />
       <meta name="twitter:card" content="Default content" />
       <meta property="fb:app_id" content="FB_APP_ID" />
       <meta name="google-site-verification" content="[Google Web Master Tools]" />
