@@ -7,7 +7,6 @@
 # Jam3 NextJS Generator
 
 ![GitHub](https://img.shields.io/github/license/jam3/nyg-nextjs)
-[![Codeship Status for Jam3/nyg-nextjs](https://app.codeship.com/projects/0fcd63a0-29d6-0138-cc17-02df0a7848fa/status?branch=master)](https://app.codeship.com/projects/384142)
 
 > Boilerplate for React, Static and Server Side Rendered projects with NextJS
 
