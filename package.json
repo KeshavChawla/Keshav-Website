@@ -129,7 +129,7 @@
     "extends": "react-app"
   },
   "engines": {
-    "node": ">=10.15.0",
+    "node": "14.20.0",
     "npm": ">=6.5.0"
   },
   "husky": {
