@@ -22,7 +22,7 @@ export default {
       [
         {
           type: 'text',
-          content: 'I am working at '
+          content: 'I am currently working at '
         },
         {
           type: 'link',
@@ -204,7 +204,7 @@ export default {
     ]
   },
   contacts: {
-    email: 'hello@keshavchawla.com',
+    email: 'keshav@keshavchawla.com',
     links: [
       {
         platform: 'Instagram',
