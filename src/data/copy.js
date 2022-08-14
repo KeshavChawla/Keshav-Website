@@ -208,7 +208,7 @@ export default {
     links: [
       {
         platform: 'Instagram',
-        link: 'https://instagram.com/keshav.chawla_/'
+        link: 'https://instagram.com/keshavchawla_/'
       },
       {
         platform: 'Github',
