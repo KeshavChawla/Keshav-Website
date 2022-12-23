@@ -14,6 +14,7 @@ html {
   font-size: 10px;
   font-family: $generic-fonts;
   text-align: center;
+  overflow: auto;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   background-color: $black;
   overscroll-behavior-y: none;
   overflow: visble;
+  height: 100%;
 }
 
 .is-loading {
