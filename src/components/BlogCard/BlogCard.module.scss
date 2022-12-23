@@ -1,0 +1,107 @@
+@import 'shared';
+
+.blogCard {
+  width: 100%;
+  display: grid;
+  position: relative;
+  border: 1px solid #3b85ec;
+  border-radius: 25px;
+  column-gap: px(20);
+  overflow: hidden;
+  justify-content: start;
+  margin: px(20) auto;
+
+  @include breakpoint(desktopSm) {
+    // grid-auto-flow: column;
+    max-height: px(450);
+  }
+}
+
+.blogShowcase {
+  display: inline-grid;
+  max-height: px(450);
+  min-height: px(100);
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+
+  @include breakpoint(desktopSm) {
+    // width: px(500);
+  }
+
+  .postImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.blogBlurb {
+  margin-top: px(20);
+  color: white;
+  height: 100%;
+  margin-bottom: px(10);
+  margin-left: px(10);
+  width: 95%;
+  overflow: hidden;
+
+  @include word-wrap;
+
+  .postTitle {
+    font-size: px(20);
+    width: 100%;
+    margin-bottom: px(2);
+  }
+
+  .postData {
+    font-size: px(13);
+    width: 100%;
+    margin-bottom: px(10);
+  }
+
+  .postByline {
+    font-size: px(15);
+    margin-bottom: px(14);
+    width: 100%;
+  }
+
+  .postDescription {
+    width: 100%;
+    font-size: px(14);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* number of lines to show */
+    line-clamp: 7;
+    // text-justify: inter-word;
+    text-align: justify;
+    -webkit-box-orient: vertical;
+
+    @include breakpoint(tablet) {
+      -webkit-line-clamp: 5; /* number of lines to show */
+      line-clamp: 5;
+    }
+
+    @include breakpoint(desktopSm) {
+      -webkit-line-clamp: 4; /* number of lines to show */
+      line-clamp: 4;
+    }
+
+    @include breakpoint(desktopMd) {
+      -webkit-line-clamp: 3; /* number of lines to show */
+      line-clamp: 3;
+    }
+  }
+
+  a {
+    @include link-styles;
+  }
+
+  a:hover {
+    @include link-styles-hover;
+  }
+
+  @include breakpoint(tablet) {
+    width: calc(100% - 20px);
+  }
+}

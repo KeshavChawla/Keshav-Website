@@ -105,6 +105,25 @@
       max-width: 144rem;
       width: 100%;
     }
+    .blogPostWrapper {
+      // display: flex;
+      display: grid;
+      column-gap: 40px;
+      position: relative;
+      grid-template-columns: 1fr;
+      // overflow: hidden;
+      row-gap: 0px;
+
+      @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include breakpoint(desktopSm) {
+        // grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 33% 33% 33%;
+        width: 94%;
+      }
+    }
   }
 
   .blogDate {
