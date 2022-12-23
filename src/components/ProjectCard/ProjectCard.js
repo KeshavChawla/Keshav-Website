@@ -32,7 +32,7 @@ function ProjectCard(props) {
   }, []);
 
   return (
-    <div data-aos="zoom-in" className={styles.projectCard}>
+    <div data-aos="fade-down" data-aos-offset="100" className={styles.projectCard}>
       <div className={styles.projectShowcase}>
         <img
           className={styles.projectImage}
