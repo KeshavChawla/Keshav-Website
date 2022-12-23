@@ -10,8 +10,8 @@ import matter from 'gray-matter';
  * _pages will have the home.md (aka index or /)
  * _pages/dynamic will be home to all other pages (aka [slug].js)
  */
-const pagesDirectory = join(process.cwd(), 'src/_pages');
-const dynamicPagesDirectory = join(pagesDirectory, 'dynamic');
+const pagesDirectory = join(process.cwd(), 'src/data');
+const dynamicPagesDirectory = join(pagesDirectory, 'blog');
 
 /**
  * Gets all the files (slugs) in a directory

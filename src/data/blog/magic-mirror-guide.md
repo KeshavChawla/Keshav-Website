@@ -1,9 +1,11 @@
 ---
-template: BlogPost
-path: /magic-mirror-guide
-title: A Step by Step Guide to Build your own Smart Mirror
+title: A Guide to Build Your Own Smart Mirror
 date: August 8th, 2019
 thumbnail: /assets/images/mm-cover-pic-copy.jpeg
+description: 'In July of 2017, I stumbled an online video of a custom made touchscreen smart mirror. It immediately inspired me to make my own smart mirror-based off the MagicMirror² platform. This post is my journey through the process and a guide to help you make your own smart mirror.'
+
+template: BlogPost
+path: /magic-mirror-guide
 metaDescription: A step by step guide to building your own Magic Mirror.
 ---
 
@@ -16,7 +18,7 @@ metaDescription: A step by step guide to building your own Magic Mirror.
      style="max-height: 700px; display: flex;" />
 </div>
 
-In July of 2017, I stumbled across <a href="https://youtu.be/sh2EJzplkpM" target="_blank">this video</a> by Ryan Nelwan where he showcases his custom made touchscreen smart mirror. It immediately inspired me to make my own smart mirror-based off the MagicMirror² platform. This post is my journey through the process and.
+In July of 2017, I stumbled across <a href="https://youtu.be/sh2EJzplkpM" target="_blank">this video</a> by Ryan Nelwan where he showcases his custom made touchscreen smart mirror. It immediately inspired me to make my own smart mirror-based off the MagicMirror² platform. This post is my journey through the process and a guide to help you make your own smart mirror.
 
 | ![Ryan Nelwan’s Touchscreen “PANL” Mirror](/assets/images/magic-mirror-panl.png 'Ryan Nelwan’s Touchscreen “PANL” Mirror') |
 | :------------------------------------------------------------------------------------------------------------------------: |

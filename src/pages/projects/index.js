@@ -37,7 +37,7 @@ function Projects() {
   useEffect(() => {
     gsap
       .timeline()
-      .from(titleRef.current, { autoAlpha: 0, y: 10, duration: 1 }, 0)
+      .from(titleRef.current, { autoAlpha: 0, y: -10, duration: 1 }, 0)
       .from(cardRef.current, { autoAlpha: 0, y: -10, stagger: 0.6, duration: 1 }, 0.6);
   }, [titleRef, cardRef]);
 
@@ -53,12 +53,7 @@ function Projects() {
         </h1>
         {copy.projects.projectList.map((project, i) => (
           <div ref={(element) => cardRef.current.push(element)}>
-            <ProjectCard
-              // ref={el => cardRef.current[i] = el}
-
-              // ref={cardRef.current[i]}
-              {...project}
-            />
+            <ProjectCard {...project} />
           </div>
         ))}
       </section>
