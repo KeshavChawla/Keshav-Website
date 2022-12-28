@@ -243,7 +243,7 @@ Now consider a second year and above CFM student:
 
 </br>
 
-You can see the cost is a substantial amount. Just one class of AFM 121 for an international CFM student can cost \$174.38. It doesn't make sense to skip a class financially.
+You can see the cost is a substantial amount. Just one class of AFM 121 for an international CFM student can cost \$174.38. It doesn't make sense to skip a class financially even if you think it's just one class or that you learn better yourself. Just remember when you skip that class to put it into context of what that really means.
 </br>
 
 More often than not, Professors will put information into exams or give tips that are only mentioned in class. While you may be able to learn the material on your own, it's likely that you won't be able to learn everything taught in class, and it will take you a longer time in comparison. Show up to class.
