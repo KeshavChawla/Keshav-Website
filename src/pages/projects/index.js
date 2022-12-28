@@ -14,6 +14,7 @@ import copy from '../../data/copy';
 function Projects() {
   const containerRef = useRef();
   const titleRef = useRef();
+  const cardRef = useRef([]);
   const dispatch = useDispatch();
 
   const animateInInit = useCallback(() => {
@@ -21,7 +22,7 @@ function Projects() {
   }, []);
 
   const animateIn = useCallback(async () => {
-    await gsap.to(containerRef.current, { duration: 0.5, autoAlpha: 1, delay: 0.3 });
+    await gsap.to(containerRef.current, { duration: 0.5, autoAlpha: 1 });
     dispatch(setLandingLoaded(true));
   }, [dispatch]);
 
@@ -34,8 +35,11 @@ function Projects() {
   }, [animateIn]);
 
   useEffect(() => {
-    gsap.from(titleRef.current, { autoAlpha: 0, y: 10, stagger: 0.2, duration: 0.5 });
-  }, [titleRef]);
+    gsap
+      .timeline()
+      .from(titleRef.current, { autoAlpha: 0, y: -10, duration: 1 }, 0)
+      .from(cardRef.current, { autoAlpha: 0, y: -10, stagger: 0.6, duration: 1 }, 0.6);
+  }, [titleRef, cardRef]);
 
   return (
     <main className={styles.Projects}>
@@ -47,8 +51,10 @@ function Projects() {
             📋
           </span>
         </h1>
-        {copy.projects.projectList.map((project) => (
-          <ProjectCard {...project} />
+        {copy.projects.projectList.map((project, i) => (
+          <div ref={(element) => cardRef.current.push(element)}>
+            <ProjectCard {...project} />
+          </div>
         ))}
       </section>
     </main>
