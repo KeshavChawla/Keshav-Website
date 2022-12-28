@@ -1,9 +1,7 @@
+// From the tutorial guide https://dev.to/jameswallis/combining-markdown-and-dynamic-routes-to-make-a-more-maintainable-next-js-website-3ogl by James Wallis
 import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
-// import unified from 'unified';
-// import parse from 'remark-parse';
-// import remark2react from 'remark-react';
 
 /**
  * _pages and _pages/dynamic directory where the markdown content will live
@@ -33,7 +31,6 @@ export function getBySlug(dir, slug, fields = []) {
   const { data, content } = matter(fileContents);
 
   // const contentHtml = getContentHTML(content)
-
   const items = {};
 
   // Ensure only the minimal needed data is exposed
@@ -45,10 +42,6 @@ export function getBySlug(dir, slug, fields = []) {
       items[field] = content;
     }
 
-    // if (field === 'date') {
-    //   items[field] = date;
-    // }
-
     if (data[field]) {
       items[field] = data[field];
     }
@@ -56,17 +49,6 @@ export function getBySlug(dir, slug, fields = []) {
 
   return items;
 }
-
-// export async function getContentHTML(content) {
-//   // const { remark } = await import('../unified.mjs')
-//   const processedContent = await remark()
-//     .use(html)
-//     .process(content);
-//   const contentHtml = processedContent.toString();
-
-//   // Combine the data with the id and contentHtml
-//   return contentHtml;
-// }
 
 /**
  * Returns contents of a page in the _pages directory
