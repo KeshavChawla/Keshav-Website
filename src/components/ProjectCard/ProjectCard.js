@@ -33,7 +33,7 @@ function ProjectCard(props) {
 
   return (
     <div data-aos="fade-down" data-aos-offset="100" className={styles.projectCard}>
-      <div className={styles.projectShowcase}>
+      <div className={props.forceLargeImage ? styles.projectShowcaseForceLarge : styles.projectShowcase}>
         <img
           className={styles.projectImage}
           ref={projectImageRef}
@@ -56,6 +56,14 @@ function ProjectCard(props) {
             {props.linkCta}
           </a>
         </h5>
+        {props.pressLinks?.map((pressLink) => (
+          <h5 className={styles.projectCardPressLink}>
+            {pressLink.title}:{' '}
+            <a target="_blank" rel="noreferrer" href={pressLink.link}>
+              {pressLink.link}
+            </a>
+          </h5>
+        ))}
       </div>
     </div>
   );
@@ -65,8 +73,10 @@ ProjectCard.propTypes = checkProps({
   imageAlt: PropTypes.string,
   image: PropTypes.string,
   techStack: PropTypes.string,
+  forceLargeImage: PropTypes.bool,
   description: PropTypes.arrayOf(PropTypes.string),
-  linkCta: PropTypes.string
+  linkCta: PropTypes.string,
+  pressLinks: PropTypes.arrayOf(PropTypes.string)
 });
 
 ProjectCard.defaultProps = {};

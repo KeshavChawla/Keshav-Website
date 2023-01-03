@@ -13,13 +13,15 @@
 
   @include breakpoint(desktopSm) {
     grid-auto-flow: column;
-    max-height: px(450);
+    max-height: px(550);
   }
 }
 
-.projectShowcase {
+.projectShowcase,
+.projectShowcaseForceLarge {
+  position: relative;
   display: inline-grid;
-  max-height: px(450);
+  max-height: px(350);
   min-height: px(300);
   overflow: hidden;
   width: 100%;
@@ -34,6 +36,10 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.projectShowcaseForceLarge {
+  max-height: px(550);
 }
 
 .projectBlurb {
@@ -61,6 +67,10 @@
     width: 100%;
     margin-bottom: px(10);
     // display: inline;
+  }
+
+  .projectCardPressLink {
+    margin-top: 10px;
   }
 
   a {
