@@ -16,13 +16,13 @@ export default {
         },
         {
           type: 'text',
-          content: ' student at the University of Waterloo.'
+          content: ' student (4A) at the University of Waterloo.'
         }
       ],
       [
         {
           type: 'text',
-          content: 'I am currently working at '
+          content: 'Most recently, I was working at '
         },
         {
           type: 'link',
@@ -37,7 +37,7 @@ export default {
       [
         {
           type: 'text',
-          content: 'I previously worked at '
+          content: 'I have previously worked at '
         },
         {
           type: 'link',
@@ -125,6 +125,58 @@ export default {
   },
   projects: {
     projectList: [
+      {
+        image: 'wild_cities.jpg',
+        imageAlt: 'Wild Cities Splash Page',
+        title: 'Wild Cities App & Splash Page',
+        techStack: 'React, NextJS',
+        forceLargeImage: true,
+        description: [
+          '"Wild Cities is an interactive AR story that inspires and educates the next generation about our symbiotic relationship with nature."',
+          '"Climate change, deforestation, and urbanization are affecting the world in ways that impact us all, but the loss of natural habitats and wildlife is often invisible to many. Wild Cities is an interactive AR story that inspires and educates the next generation about our symbiotic relationship with nature."'
+        ],
+        linkCta: 'https://wildcities.app/',
+        pressLinks: [
+          {
+            link: 'https://thefwa.com/cases/wild-cities',
+            title: 'FWA of The Day - June 7th, 2022'
+          },
+          {
+            link:
+              'https://winners.webbyawards.com/2022/apps-and-software/mobile-ott-app-features/best-use-of-augmented-reality/218254/wild-cities',
+            title: 'Webby Awards Nominee for Best Use of Augmented Reality 2022'
+          },
+          {
+            link: 'https://theadcc.ca/archive/wild-cities_2022_bronze_augmented-reality-virtual-reality',
+            title: 'The ADCC Bronze / 2022'
+          },
+          {
+            link: 'https://www.a-bahn.com/projects/wild-cities',
+            title: 'a_BAHN'
+          },
+          {
+            link: 'https://wild-cities.hello-jury.com/',
+            title: 'Jury Site'
+          },
+          {
+            link:
+              'https://www.campaignlive.com/article/jam3-canada-media-fund-using-ar-educate-kids-climate-change/1732403',
+            title: 'Campaign US'
+          },
+          {
+            link: 'https://marketingnewscanada.com/news/jam3-helps-tackle-climate-change-with-an-ar-app-for-kids',
+            title: 'Marketing News Canada'
+          },
+          {
+            link: 'https://apps.apple.com/ca/app/wild-cities-ar/id1535651296',
+            title: 'App Store'
+          },
+          {
+            link: 'https://play.google.com/store/apps/details?id=com.jam3.WildCities',
+            title: 'Google Play Store'
+          }
+        ]
+      },
       {
         image: 'latex_2_mobius.jpg',
         imageAlt: 'Screenshot of the LaTeX2Mobius Web Application',
