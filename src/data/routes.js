@@ -15,6 +15,10 @@ export default {
     path: '/projects/',
     title: 'Projects'
   },
+  Resume: {
+    path: '/resume/',
+    title: 'Resume'
+  },
   Contact: {
     path: '/contact/',
     title: 'Contact'

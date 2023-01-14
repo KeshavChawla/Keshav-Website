@@ -43,6 +43,15 @@ const nextJSConfig = {
   devIndicators: {
     autoPrerender: false
   },
+  async redirects() {
+    return [
+      {
+        source: '/resume/',
+        destination: '/KCResume.pdf',
+        permanent: false
+      }
+    ];
+  },
   sassOptions: {
     includePaths: ['src/styles']
   },
