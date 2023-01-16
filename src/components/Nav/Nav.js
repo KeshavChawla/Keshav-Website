@@ -6,25 +6,13 @@ import { gsap } from 'gsap';
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 
-// import dynamic from 'next/dynamic';
 import styles from './Nav.module.scss';
 import routes from '../../data/routes';
-
-// const KeshavLogoDark = dynamic(() => import('../../assets/images/KeshavLogoDark.png'));
-// const KeshavLogoLight = dynamic(() => import('../../assets/images/KeshavLogoLight.png'));
-
-// import KeshavLogoDark from '../../assets/images/KeshavLogoDark.png';
-// import KeshavLogoLight from '../../assets/images/KeshavLogoLight.png';
 
 export const navThemes = {
   dark: 'dark',
   light: 'light'
 };
-
-// const LINKS = [{ href: 'https://keshavchawla.com', label: 'Keshav', src: KeshavLogoLight }].map((link) => ({
-//   ...link,
-//   key: `nav-link-${link.href}-${link.label}`
-// }));
 
 const LINKS = [];
 
@@ -35,13 +23,9 @@ function Nav({ theme }) {
   const [memojiImgNum, setMemojiImgNum] = useState(18);
 
   function randomizedMemoji() {
-    const memojiInteger = Math.floor(Math.random() * 33); // returns a random integer from 0 to 32
-    var finalMemojiNumber = memojiInteger;
-    if (memojiInteger === 10 || memojiInteger === 29) {
-      finalMemojiNumber = 3;
-    } else if (memojiInteger === 18 || memojiInteger === 5) {
-      finalMemojiNumber = 26;
-    }
+    var memojiAcceptableNums = [1, 3, 9, 25, 26, 28, 31];
+    const finalMemojiNumber = memojiAcceptableNums[Math.floor(Math.random() * memojiAcceptableNums.length)];
+
     setMemojiImgNum(finalMemojiNumber);
   }
 
