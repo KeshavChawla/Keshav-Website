@@ -1,6 +1,7 @@
 ---
 title: Sponsorships That Work
 date: May 2nd, 2018
+isoDate: '2018-05-02'
 thumbnail: /assets/images/sponsorship-profile-pic.jpeg
 description: "I've raised sponsorship donations for numerous non-profit organizations and events: including Toronto Youth Network, InspireHacks 2018, Model City Hall, Network Nights August 2017, and Network Nights March 2018. In total, I have raised over $10,000+ worth of sponsorship in-kind donations, cash and venue space. Through the process, I have learned so much and fallen victim to many pitfalls."
 

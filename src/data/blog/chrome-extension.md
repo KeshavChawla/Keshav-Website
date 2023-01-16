@@ -1,6 +1,7 @@
 ---
 title: Creating my own Clutter-Free Chrome Extension
 date: July 16th, 2020
+isoDate: '2022-07-16'
 thumbnail: /assets/images/chrome-extension-simplex.jpeg
 description: 'In July of 2017, I stumbled an online video of a custom made touchscreen smart mirror. It immediately inspired me to make my own smart mirror-based off the MagicMirror² platform. This post is my journey through the process and a guide to help you make your own smart mirror.'
 ---

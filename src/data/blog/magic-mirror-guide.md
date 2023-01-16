@@ -1,6 +1,7 @@
 ---
 title: A Guide to Build Your Own Smart Mirror
 date: August 8th, 2019
+isoDate: '2019-08-08'
 thumbnail: /assets/images/mm-cover-pic-copy.jpeg
 description: 'In July of 2017, I stumbled an online video of a custom made touchscreen smart mirror. It immediately inspired me to make my own smart mirror-based off the MagicMirror² platform. This post is my journey through the process and a guide to help you make your own smart mirror.'
 
