@@ -17,6 +17,10 @@ I made a new project! I am particularly proud of this one for the immense amount
 <!-- <a href="" target="_blank"></a> -->
 </br>
 
+![Digital Vinyl Photo One](/assets/images/DigitalVinylCover.jpg '*A showcase of the Digital Vinyl Project')
+
+![Digital Vinyl Photo One](/assets/images/DG1.jpg '*A showcase of the Digital Vinyl Project')
+
 </br>
 
 ## Attributions
@@ -29,6 +33,8 @@ I made a new project! I am particularly proud of this one for the immense amount
   <li>The documentation and sample C++ code for the <a href="https://www.waveshare.com/wiki/PN532_NFC_HAT" target="_blank">Waveshare PN532 NFC HAT</a> were used to create the NFC Reader</li>
 </ul>
 </br>
+
+![Digital Vinyl Photo One](/assets/images/DG2.jpg '*A showcase of the Digital Vinyl Project')
 
 ## Links
 
@@ -48,8 +54,12 @@ The Modified Nowify Version of the project which I used for this project can be 
 If I find I missed some links or feel I need to give credit to someone else as well I will be sure to do so by updating the list above.
 </br>
 
+![Digital Vinyl Photo One](/assets/images/DG3.jpg '*A showcase of the Digital Vinyl Project')
+
 ## I hope this can provide you with some inspiration to make your own project!
 
 </br>
+
+![Digital Vinyl Photo One](/assets/images/DG4.jpg '*A showcase of the Digital Vinyl Project')
 
 \[1]: The projects steps are not the same and this project does not use the Spotify-RFID-Record-Player Git repository mentioned in the video or Python or Harcoded Spotify UUIDs in the program for that matter but it is still a good tutorial for anyone else looking to make a similar project and I encourage others to see
