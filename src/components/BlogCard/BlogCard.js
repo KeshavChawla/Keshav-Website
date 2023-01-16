@@ -66,6 +66,7 @@ function BlogCard(props) {
 BlogCard.propTypes = checkProps({
   title: PropTypes.string,
   date: PropTypes.string,
+  isoDate: PropTypes.string,
   description: PropTypes.string,
   thumbnail: PropTypes.string,
   slug: PropTypes.string

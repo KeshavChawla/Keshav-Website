@@ -3,11 +3,11 @@ title: Making a Digital Vinyl Player
 date: January 15th, 2023
 isoDate: '2023-01-15'
 thumbnail: /assets/images/DigitalVinylCover.jpg
-description: 'In July of 2017, I stumbled an online video of a custom made touchscreen smart mirror. It immediately inspired me to make my own smart mirror-based off the MagicMirror² platform. This post is my journey through the process and a guide to help you make your own smart mirror.'
+description: 'I made a new project! I am particularly proud of this one for the immense amount of skills and knowledge I have learned. Looking back just a few years ago I would not have been able to do this because I lacked the pre-requisite skills. This project acts almost like a "picture book" of sorts as it includes some elements or aspects of a skill I picked up through co-op, school, or self-learning.'
 
 template: BlogPost
 path: /digital-vinyl-project
-metaDescription: A step by step guide to building your own Magic Mirror.
+metaDescription: A preview of me building the Digital Vinyl Player
 ---
 
 <iframe style="display: flex; justify-content: center; padding: 25px 0" height="700" src="https://www.youtube.com/embed/kNzJJyI0BcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
