@@ -1,6 +1,7 @@
 ---
 title: 'My first year at the University of Waterloo: Tips to incoming undergraduates'
 date: April 6th, 2020
+isoDate: '2020-04-06'
 thumbnail: /assets/images/IMG_2287.jpeg
 description: 'I have officially completed my second term at the University of Waterloo and my first year as a Computing and Financial Management (CFM) student here. I thought I would take a couple of moments to reflect on the past year, the courses I have taken, and what I have realized during the last eight months. I have thought about how valuable (and expensive) this last year has been. UW has pushed me far beyond what I believed was possible. I have had many long nights, stressful assignments, and a (healthy) dosage anxiety-inducing exams. In combination, I have had many laughs, social nights, and successes.'
 

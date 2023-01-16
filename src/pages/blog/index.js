@@ -76,8 +76,15 @@ function Blog({ posts }) {
 export default withRedux(Blog);
 
 export async function getStaticProps() {
-  const posts = getAllDynamicPages(['slug', 'title', 'description', 'date', 'thumbnail']);
+  const posts = getAllDynamicPages(['slug', 'title', 'description', 'date', 'isoDate', 'thumbnail']);
 
+  // from https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value
+  function compare(a, b) {
+    if (Date.parse(a.isoDate) > Date.parse(b.isoDate)) return -1;
+    else if (Date.parse(a.isoDate) < Date.parse(b.isoDate)) return 1;
+    return 0;
+  }
+  posts.sort(compare);
   // Get all our posts
   return {
     props: {

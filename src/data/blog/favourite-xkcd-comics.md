@@ -1,6 +1,7 @@
 ---
 title: My Favourite xkcd Comics
 date: December 16th, 2020
+isoDate: '2020-12-16'
 thumbnail: /assets/images/xkcd_standards.png
 description: 'Just a small collection of some of my favourite xkcd comics. All posts can be found at https://xkcd.com/[POST NUMBER]'
 
