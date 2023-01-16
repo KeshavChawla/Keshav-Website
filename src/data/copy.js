@@ -126,6 +126,18 @@ export default {
   projects: {
     projectList: [
       {
+        image: 'DigitalVinylCover.jpg',
+        imageAlt: 'A showcase of the Digital Vinyl Project',
+        title: 'Making a Digital Vinyl Player',
+        techStack: 'C++, Node.js, React, Spotify API, Raspberry Pi',
+        description: [
+          'I wanted a way to enjoy my music both digitally and physically, and so I found the inspiration to make a digital vinyl player.',
+          'The premise is that I create mini-vinyl albums which have an embedded NFC tag within them so when I place the album atop my Raspberry Pi they play the associated album/song.',
+          'See the linked blog posts for full details and a walkthrough video!'
+        ],
+        linkCta: 'https://www.keshavchawla.com/blog/digital-vinyl-project/'
+      },
+      {
         image: 'wild_cities.jpg',
         imageAlt: 'Wild Cities Splash Page',
         title: 'Wild Cities App & Splash Page',
