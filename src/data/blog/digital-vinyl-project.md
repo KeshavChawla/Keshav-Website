@@ -21,6 +21,8 @@ I made a new project! I am particularly proud of this one for the immense amount
 
 ![Digital Vinyl Photo One](/assets/images/DG1.jpg '*A showcase of the Digital Vinyl Project')
 
+![Digital Vinyl Diagram](/assets/images/DigitalVinylDiagram.jpg '*A diagram of the Digital Vinyl Project in a UML like format')
+
 </br>
 
 ## Attributions
