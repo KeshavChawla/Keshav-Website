@@ -37,8 +37,8 @@ function Projects() {
   useEffect(() => {
     gsap
       .timeline()
-      .from(titleRef.current, { autoAlpha: 0, y: -10, duration: 1 }, 0)
-      .from(cardRef.current, { autoAlpha: 0, y: -10, stagger: 0.6, duration: 1 }, 0.6);
+      .from(titleRef.current, { autoAlpha: 0, y: 10, duration: 1 }, 0)
+      .from(cardRef.current, { autoAlpha: 0, y: 10, stagger: 0.6, duration: 1 }, 0.6);
   }, [titleRef, cardRef]);
 
   return (

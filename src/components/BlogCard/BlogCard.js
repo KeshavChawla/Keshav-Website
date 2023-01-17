@@ -32,7 +32,7 @@ function BlogCard(props) {
   }, []);
 
   return (
-    <a target="_blank" rel="noreferrer" href={props.slug}>
+    <a href={props.slug}>
       <div data-aos="fade-down" data-aos-offset="100" className={styles.blogCard}>
         <div className={styles.blogShowcase}>
           <img

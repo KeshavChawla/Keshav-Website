@@ -5,6 +5,8 @@ import hljs from 'highlight.js';
 import { marked } from 'marked';
 import { getDynamicPageContentBySlug, getAllDynamicPages } from '../../lib/markdown';
 
+import Head from '../../components/Head/Head';
+
 import styles from '../index.module.scss';
 
 import { withRedux } from '../../redux/withRedux';
@@ -44,6 +46,7 @@ function Projects(props) {
 
   return (
     <main className={styles.Blog}>
+      <Head title={title} />
       <section className={styles.blogSection}>
         <div className={styles.blogWrapper}>
           <h1 ref={titleRef} className={styles.projectsTitle}>

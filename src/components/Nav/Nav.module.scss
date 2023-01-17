@@ -55,6 +55,7 @@
 
         .keshavLogo {
           width: px(50);
+
           &.dark {
             background-color: $black;
             color: $white;
@@ -74,6 +75,16 @@
 
       > li {
         padding: 0 px(10);
+      }
+    }
+
+    .resumeNavLink {
+      display: none;
+    }
+
+    @media (min-width: 446px) {
+      .resumeNavLink {
+        display: list-item;
       }
     }
   }

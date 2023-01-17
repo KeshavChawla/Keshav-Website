@@ -22,7 +22,7 @@ export default {
       [
         {
           type: 'text',
-          content: 'Most recently, I was working at '
+          content: 'Most recently, I worked at '
         },
         {
           type: 'link',
@@ -31,7 +31,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' for the spring 2022 term! '
+          content: ' (software engineering) for the spring 2022 term! '
         }
       ],
       [
@@ -46,7 +46,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' as a 💻 JavaScript Developer (Fall 2021 Co-op) and '
+          content: ' as a 💻 JavaScript software developer intern (fall 2021 co-op) and at '
         },
         {
           type: 'link',
@@ -55,13 +55,13 @@ export default {
         },
         {
           type: 'text',
-          content: ' as a 🖥 Developer Intern (Winter 2021 Co-op).'
+          content: ' as a 🖥 software developer intern (winter 2021 co-op).'
         }
       ],
       [
         {
           type: 'text',
-          content: 'Before all of that, I was an Online Learning Assistant with the '
+          content: 'Before that, I was an online learning assistant with the '
         },
         {
           type: 'link',
@@ -76,7 +76,7 @@ export default {
       [
         {
           type: 'text',
-          content: 'I have also worked with numerous organizations including '
+          content: 'I have also worked with numerous organizations, including '
         },
         {
           type: 'link',
@@ -100,25 +100,25 @@ export default {
       [
         {
           type: 'text',
-          content: "I'm a previous member of 📊 "
+          content: "I'm a junior portfolio manager of the 📊 "
         },
         {
           type: 'link',
-          content: 'The Student Investment Fund',
+          content: 'Student Investment Fund',
           link: 'https://uwaterloo.ca/school-of-accounting-and-finance/student-investment-fund'
         },
         {
           type: 'text',
-          content: ' as a Junior Analyst (Spring 2021) and 💵 '
+          content: ' (former junior and senior analyst) and 💵 '
         },
         {
           type: 'link',
-          content: 'The Mathematics Endowment Fund',
+          content: 'the Mathematics Endowment Fund',
           link: 'https://uwaterloo.ca/math-endowment-fund/'
         },
         {
           type: 'text',
-          content: ' - Funding Council (Fall 2019 & Spring 2020).'
+          content: ' - Funding Council (fall 2019 & spring 2020).'
         }
       ]
     ]
