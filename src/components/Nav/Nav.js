@@ -46,9 +46,9 @@ function Nav({ theme }) {
             Skip to content
           </a>
           {Object.values(routes).map(({ path, title }) => (
-            <li key={path}>
+            <li key={path} {...(title === 'Resume' ? { className: styles.resumeNavLink } : {})}>
               <Link href={path}>
-                <a aria-label="Home">
+                <a aria-label={title}>
                   {(path === '/') & (title !== 'About') ? (
                     <img
                       className={styles.keshavLogo}
