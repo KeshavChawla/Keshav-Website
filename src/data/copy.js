@@ -7,7 +7,7 @@ export default {
       [
         {
           type: 'text',
-          content: "I'm Keshav, a 👨‍💻 "
+          content: "I'm Keshav, a  "
         },
         {
           type: 'link',
@@ -16,13 +16,28 @@ export default {
         },
         {
           type: 'text',
-          content: ' student (4A) at the University of Waterloo.'
+          content: ' 👨‍💻 student (4B) at the University of Waterloo.'
         }
       ],
       [
         {
           type: 'text',
-          content: 'Most recently, I worked at '
+          content: 'I am currently a software engineering intern at '
+        },
+        {
+          type: 'link',
+          content: 'Bloomberg',
+          link: 'https://www.bloomberg.com/company/'
+        },
+        {
+          type: 'text',
+          content: '.'
+        }
+      ],
+      [
+        {
+          type: 'text',
+          content: 'I have previously interned at '
         },
         {
           type: 'link',
@@ -31,13 +46,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' (software engineering) for the spring 2022 term! '
-        }
-      ],
-      [
-        {
-          type: 'text',
-          content: 'I have previously worked at '
+          content: ' 📖 (S22 software engineering), '
         },
         {
           type: 'link',
@@ -46,7 +55,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' as a 💻 JavaScript software developer intern (fall 2021 co-op) and at '
+          content: ' 📱 (F21 JavaScript software developer), and '
         },
         {
           type: 'link',
@@ -55,22 +64,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' as a 🖥 software developer intern (winter 2021 co-op).'
-        }
-      ],
-      [
-        {
-          type: 'text',
-          content: 'Before that, I was an online learning assistant with the '
-        },
-        {
-          type: 'link',
-          content: 'University of Waterloo Faculty of Mathematics',
-          link: 'https://uwaterloo.ca/math/'
-        },
-        {
-          type: 'text',
-          content: '.'
+          content: ' 🖥 (W21 software developer).'
         }
       ],
       [
@@ -100,7 +94,7 @@ export default {
       [
         {
           type: 'text',
-          content: "I'm a junior portfolio manager of the 📊 "
+          content: "I've also been a part of the "
         },
         {
           type: 'link',
@@ -109,7 +103,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' (former junior and senior analyst) and 💵 '
+          content: ' 📊 (W23 junior portfolio manager, F23 senior analyst, and S21 junior analyst) and '
         },
         {
           type: 'link',
@@ -118,7 +112,7 @@ export default {
         },
         {
           type: 'text',
-          content: ' - Funding Council (fall 2019 & spring 2020).'
+          content: ' 💵 Funding Council (F19 & S20).'
         }
       ]
     ]
