@@ -32,8 +32,9 @@ $keshav-primary-colour: #0a68e6;
 // ====================================================================
 $page-bg-color: $white;
 $element-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.04);
-$generic-fonts: Roboto, Helvetica, Arial, sans-serif;
-
+$generic-fonts: WorkSansRegular, Serif, Roboto, Helvetica, Arial, sans-serif;
+$font-priority: WorkSansRegular, Serif, Roboto, Helvetica, Arial, sans-serif;
+$font-priority-404: sans-serif;
 // ====================================================================
 // Nav bar
 // ====================================================================

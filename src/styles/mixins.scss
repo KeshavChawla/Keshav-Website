@@ -239,7 +239,7 @@
 }
 
 @mixin link-styles() {
-  text-decoration: underline;
+  text-decoration: underline dashed;
 }
 
 @mixin link-styles-hover() {
