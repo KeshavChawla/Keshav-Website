@@ -134,7 +134,6 @@
 .blogContent {
   overflow: hidden;
   display: flex;
-  // flex-wrap: wrap;
   flex-direction: column;
 
   img {
@@ -153,7 +152,6 @@
     border: 2px solid #eaecef;
     border-radius: 10px;
     padding: 20px 10px;
-    // overflow: hidden;
     background-color: #013f7d;
   }
 
@@ -183,7 +181,6 @@
   .custom404Meomji {
     width: 90vw;
     object-fit: contain;
-    // transform: translate(-50%, -50%);
     margin-top: 5%;
     margin-bottom: 5%;
 
@@ -194,7 +191,7 @@
 
   .error404Link {
     .error404Text {
-      font-family: 'Roboto-Medium', sans-serif;
+      font-family: $font-priority-404;
       text-transform: uppercase;
       color: #0a68e6;
       -webkit-text-fill-color: #fffbef;

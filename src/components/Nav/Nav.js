@@ -23,7 +23,7 @@ function Nav({ theme }) {
   const [memojiImgNum, setMemojiImgNum] = useState(18);
 
   function randomizedMemoji() {
-    var memojiAcceptableNums = [1, 3, 9, 25, 26, 28, 31];
+    var memojiAcceptableNums = [1, 3, 6, 9, 13, 17, 19, 20, 24, 25, 28];
     const finalMemojiNumber = memojiAcceptableNums[Math.floor(Math.random() * memojiAcceptableNums.length)];
 
     setMemojiImgNum(finalMemojiNumber);
