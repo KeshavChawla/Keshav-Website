@@ -210,7 +210,8 @@ In contrast, the SAF building, DC, and QNC are visually appealing to the eye. I 
 
 </br>
 
-![My room in CMH](/assets/images/CMH-Room copy.jpeg "My room in CMH")
+![My room in CMH](/assets/images/CMH-Room.jpeg 'My room in CMH')
+
 </br>
 
 **My room in Claudette Millar Hall (CMH)**

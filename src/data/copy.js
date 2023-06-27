@@ -141,7 +141,7 @@ export default {
           '"Wild Cities is an interactive AR story that inspires and educates the next generation about our symbiotic relationship with nature."',
           '"Climate change, deforestation, and urbanization are affecting the world in ways that impact us all, but the loss of natural habitats and wildlife is often invisible to many. Wild Cities is an interactive AR story that inspires and educates the next generation about our symbiotic relationship with nature."'
         ],
-        linkCta: 'https://wildcities.app/',
+        linkCta: 'https://web.archive.org/web/20220921164600/https://wildcities.app/en/',
         pressLinks: [
           {
             link: 'https://thefwa.com/cases/wild-cities',
@@ -205,7 +205,7 @@ export default {
           'I am continuously improving this project and adding/modifying features to my mirror. Just recently, I was able to use the RPiPlay repository to add Airplay functionality to the mirror. In addition to the default view, the mirror is able to mirror my phone screen or "cast" a movie from my phone to watch on the mirror.',
           'Read more on the project and how to create your own here:'
         ],
-        linkCta: 'https://medium.com/@keshavchawla/a-step-by-step-guide-to-build-your-own-smart-mirror-543cebbf135f'
+        linkCta: 'https://www.keshavchawla.com/blog/magic-mirror-guide/'
       },
       {
         title: 'HackTheFridge - DoTheDew - Hackathon Project Winner',
