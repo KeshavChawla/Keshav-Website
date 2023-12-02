@@ -138,8 +138,8 @@
     "extends": "react-app"
   },
   "engines": {
-    "node": "^14.0.0",
-    "npm": ">=6.5.0"
+    "npm": "6.5.0",
+    "node": "v14.17.3"
   },
   "husky": {
     "hooks": {
