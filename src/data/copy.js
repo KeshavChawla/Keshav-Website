@@ -22,7 +22,7 @@ export default {
       [
         {
           type: 'text',
-          content: 'I am currently a software engineering intern at '
+          content: 'At my last co-op, I was a software engineering intern at '
         },
         {
           type: 'link',
@@ -31,7 +31,7 @@ export default {
         },
         {
           type: 'text',
-          content: '.'
+          content: ' (F24 and S23).'
         }
       ],
       [
@@ -103,16 +103,16 @@ export default {
         },
         {
           type: 'text',
-          content: ' 📊 (W23 junior portfolio manager, F23 senior analyst, and S21 junior analyst) and '
+          content: ' 📊 and the '
         },
         {
           type: 'link',
-          content: 'the Mathematics Endowment Fund',
+          content: 'Mathematics Endowment Fund',
           link: 'https://uwaterloo.ca/math-endowment-fund/'
         },
         {
           type: 'text',
-          content: ' 💵 Funding Council (F19 & S20).'
+          content: ' 💵 Funding Council.'
         }
       ]
     ]
